@@ -1,2 +1,2 @@
 # RPi-Scripts
-BASH Scripts for Raspberry Pi Ham Radio Software
+BASH Scripts that Install Ham Radio Software on the Raspberry Pi
