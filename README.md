@@ -7,9 +7,9 @@ In order for the script to function correctly you must have a reasonable connect
 
 The script will update all of the packages on your Operating System to their latest versions.  It will also locate, download and compile all of the requisite source code.  In many instances there are statements in the scripts that place icons on the Desktop and provide essential configuration of the software.  In the case of GNU Radio the script installs two Python configuration statements but the OS must be rebooted to enable them.  
 
-All of the scripts have detailed inline comments that explain the function of every line in the script.  They are offered under GPL v3.0 and can be easily modified by any user.
+All of the scripts have detailed inline comments that explain the function of every line in the script.  They are offered under GPL v3.0 and can be easily modified by any user.  Approximate runtimes for the scripts are included in the script descriptions.  The exact runtime depends on a number of factors including the state of the packages on your system and the speed of your Internet connection.
 
-PiHPSDR, by John Melton, G0ORX, is an absolutely excellent lightweight SDR Console that works with a variety of radios.  It uses the WDSP library for signal processing, has the capability of implementing Puresignal adaptive pre-distortion, has an intuitive interface and is very stable. PiHPSDR interfaces with other programs through the Pulse audio transport system.  Compile time on a Raspberry Pi 4 is approximately 8 minutes.
+PiHPSDR, by John Melton, G0ORX, is an absolutely excellent lightweight SDR Console that works with a variety of radios.  It uses the WDSP library for signal processing, has the capability of implementing Puresignal adaptive pre-distortion, has an intuitive interface and is very stable. PiHPSDR interfaces with other programs through the Pulse audio transport system.  Script runtime time on a Raspberry Pi 4 is approximately 8 minutes.
 
 GNU Radio, originally developed Matt Ettus is a powerful DSP toolkit. It has a graphical interface that allows allows almost any DSP function to be performed on RF derived signals.  Compile time on a Raspberry Pi 4 is TBD Minutes.
 
