@@ -9,12 +9,12 @@ The script will update all of the packages on your Operating System to their lat
 
 All of the scripts have detailed inline comments that explain the function of every line in the script.  They are offered under GPL v3.0 and can be easily modified by any user.  Approximate runtimes for the scripts are included in the script descriptions.  The exact runtime depends on a number of factors including the state of the packages on your system and the speed of your Internet connection.
 
-PiHPSDR, by John Melton, G0ORX, is an absolutely excellent lightweight SDR Console that works with a variety of radios.  It uses the WDSP library for signal processing, has the capability of implementing Puresignal adaptive pre-distortion, has an intuitive interface and is very stable. PiHPSDR interfaces with other programs through the Pulse audio transport system.  Script runtime time on a Raspberry Pi 4 is approximately 8 minutes.
+PiHPSDR, by John Melton, G0ORX, is an excellent lightweight SDR Console that works with a variety of radios.  It uses the WDSP library for signal processing, has the capability of implementing Puresignal adaptive pre-distortion, has an intuitive interface and is very stable. PiHPSDR interfaces with other programs through the Pulse audio transport system.  Script runtime time on a Raspberry Pi 4 is approximately 8 minutes.
 
-GNU Radio, originally developed Matt Ettus is a powerful DSP toolkit. It has a graphical interface that allows allows almost any DSP function to be performed on RF derived signals.  Compile time on a Raspberry Pi 4 is TBD Minutes.
+GNU Radio, originally developed Matt Ettus, N2MJI, is a powerful DSP toolkit. It has a graphical interface that allows allows almost any DSP function to be performed on RF derived signals.  Script runtime on a Raspberry Pi 4 is 3 hours and 30 minutes.
 
-WSJT-X by Joe Taylor, K1JT, and currently supported by a group of very talented developers is weak signal software that includes, among other programs, FT8, FT4, JT8 and WSPR. The script also compiles the most recent version of the Hamlib library for integrated rig control,  Compile time on a Raspberry Pi 4 is TBD Minutes.
+WSJT-X by Joe Taylor, K1JT, and currently supported by a group of very talented developers is weak signal software that includes, among other programs, FT8, FT4, JT8 and WSPR. The script also compiles the most recent version of the Hamlib library for integrated rig control,  Script runtime on a Raspberry Pi 4 is TBD Minutes.
 
-Fldigi by Dave Freese, W1HKJ, and others is a digital mode console with integrated Hamlib rig control.  This console handles a multitude of digital modes including PSK-31, WeatherFax, Hellschreiber and CW.  Compile time on a Raspberry Pi 4 is approximately 30 minutes.
+Fldigi by Dave Freese, W1HKJ, and others is a digital mode console with integrated Hamlib rig control.  This console handles a multitude of digital modes including PSK-31, WeatherFax, Hellschreiber and CW.  Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
 
-qsstv is a digital or analog Slow Scan Television program. Compile time on a Raspberry Pi 4 is TBD Minutes.
+qsstv is a digital or analog Slow Scan Television program with integrated Hamlib rig control. Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
