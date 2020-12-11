@@ -1,7 +1,7 @@
 # RPi-Scripts
 BASH Scripts that Install Ham Radio Software on the Raspberry Pi
 
-These BASH scripts install either GNU Radio, WSJT-X, PiHPSDR, Fldigi or qsstv on a Raspberry Pi using the Raspberry Pi (formerly Raspbian) Operating System.  The scripts have been tested on an 8GB RPi 4 running the December 2nd, 2020, full release of the 32-bit version of the Raspberry Pi OS.  They may or may not work successfully on other models of the Raspberry Pi or other versions of the Raspberry Pi Operating System.  
+These BASH scripts install either GNU Radio, WSJT-X, PiHPSDR, Fldigi or qsstv on a Raspberry Pi using the Raspberry Pi (formerly Raspbian) Operating System.  The scripts have been tested on an 8GB RPi 4 running the December 2, 2020, full release of the 32-bit version of the Raspberry Pi OS.  They may or may not work successfully on other models of the Raspberry Pi or other versions of the Raspberry Pi Operating System.  
 
 In order for the script to function correctly you must have a reasonable connection to the Internet.  The suggested method of launching the scripts is to create a separate directory named src off of the $HOME directory (/home/pi/src).  Copy the script file to the src directory.  Using the Command Line change the file permissions of the script to allow its execution (chmod +x name-of-the script.sh).  You can achieve the same result by doing a right click on your script and choosing Properties from the pop-up menu, then switch to the Permissions tab, tick the "Allow Executing File as Program" box.  From the command line preface the script name with a dot slash (./name-of-the-script.sh) on the Terminal and press the Enter key.  
 
@@ -13,7 +13,7 @@ PiHPSDR, by John Melton, G0ORX, is an excellent lightweight SDR Console that wor
 
 GNU Radio, originally developed Matt Ettus, N2MJI, is a powerful DSP toolkit. It has a graphical interface that allows allows almost any DSP function to be performed on RF derived signals.  Script runtime on a Raspberry Pi 4 is 3 hours and 30 minutes.
 
-WSJT-X by Joe Taylor, K1JT, and currently supported by a group of very talented developers is weak signal software that includes, among other programs, FT8, FT4, JT8 and WSPR. The script also compiles the most recent version of the Hamlib library for integrated rig control,  Script runtime on a Raspberry Pi 4 is TBD Minutes.
+WSJT-X by Joe Taylor, K1JT, and currently supported by a group of very talented developers is weak signal software that includes, among other programs, FT8, FT4, JT8 and WSPR. The script also compiles the most recent version of the Hamlib library for integrated rig control,  Script runtime on a Raspberry Pi 4 is 35 minutes.
 
 Fldigi by Dave Freese, W1HKJ, and others is a digital mode console with integrated Hamlib rig control.  This console handles a multitude of digital modes including PSK-31, WeatherFax, Hellschreiber and CW.  Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
 
