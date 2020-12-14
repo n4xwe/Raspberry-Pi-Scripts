@@ -15,6 +15,6 @@ GNU Radio, originally developed Matt Ettus, N2MJI, is a powerful DSP toolkit. It
 
 WSJT-X by Joe Taylor, K1JT, and currently supported by a group of very talented developers is weak signal software that includes, among other programs, FT8, FT4, JT8 and WSPR. The script also compiles the most recent version of the Hamlib library for integrated rig control,  Script runtime on a Raspberry Pi 4 is 35 minutes.
 
-Fldigi by Dave Freese, W1HKJ, and others is a digital mode console with integrated Hamlib rig control.  This console handles a multitude of digital modes including PSK-31, WeatherFax, Hellschreiber and CW.  Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
+Fldigi by Dave Freese, W1HKJ, and others is a digital mode console with integrated Hamlib rig control.  This console handles a multitude of digital modes including PSK-31, WeatherFax, Hellschreiber and CW.  There are two versions of the script. One installs Hamlib plus fldigi 4.1.17. The other also installs rigctl and flwkeyer. Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
 
 qsstv is a digital or analog Slow Scan Television program with integrated Hamlib rig control. Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
