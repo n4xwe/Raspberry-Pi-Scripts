@@ -1,6 +1,6 @@
 #!/bin/sh
-#install FLDIGI(4.1.17) w/Hamlib(4.0~rc3)
-#N4XWE 12-11-2020
+#install FLDIGI(4.1.17) w/Hamlib(4.0~rc4)
+#N4XWE 12-14-2020
 #Visit http://www.iquadlabs.com
 
 
@@ -16,24 +16,18 @@ libsdl1.2-dev libgsl-dev libqwt-qt5-dev libqt5opengl5-dev python3-pyqt5 liblog4c
 python3-click python3-click-plugins libportaudio-dev libpulse-dev libportaudiocpp0 ||
 	{ echo 'Dependency installation failed'; exit 1;}
 
-#Add and enable a 2GB Swapfile
-sudo fallocate -l 2G /swapfile
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
-
 #Create a unique directory for the FLDIGI compile and make it the current directory
 mkdir -p ~/src/FLDIGI && cd ~/src/FLDIGI
 
-#Download the Hamlib 4.0~rc3 source code from Sourceforge
-wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.0~rc3/hamlib-4.0~rc3.tar.gz ||
+#Download the Hamlib 4.0~rc4 source code from Sourceforge
+wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.0~rc4/hamlib-4.0~rc4.tar.gz ||
   { echo 'Unable to download the HamLib source code file'; exit 1; }
   
 #Extract the Hamlib source code files
-tar -xvzf hamlib-4.0~rc3.tar.gz
+tar -xvzf hamlib-4.0~rc4.tar.gz
 
 #Make the directory containing the uncompressed HamLib source code the current directory
-cd ~/src/FLDIGI/hamlib-4.0~rc3
+cd ~/src/FLDIGI/hamlib-4.0~rc4
 
 #Configure the Makefile for the Hamlib compile
 ./configure --prefix=/usr/local --enable-static
