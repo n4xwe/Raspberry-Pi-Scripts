@@ -1,6 +1,6 @@
 #!/bin/sh
-#install wsjt-x (2.3.0-rc2) Hamlib (4.0~rc3)
-#N4XWE 12-11-2020
+#install wsjt-x (2.3.0-rc2) Hamlib (4.0~rc4)
+#N4XWE 12-14-2020
 #Visit http://www.iquadlabs.com
 
 #Update the apt cache and upgrade the system packages to their latest versions
@@ -27,15 +27,15 @@ qttools5-dev qttools5-dev-tools qtbase5-dev-tools ||
 #Create a unique directory for the WSJT-X compile and make it the current directory
 mkdir -p ~/src/WSJTX && cd ~/src/WSJTX
 
-#Download the Hamlib 4.0~rc3 source code from Sourceforge
-wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.0~rc3/hamlib-4.0~rc3.tar.gz ||
+#Download the Hamlib 4.0~rc4 source code from Sourceforge
+wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.0~rc4/hamlib-4.0~rc4.tar.gz ||
   { echo 'Unable to download the HamLib source code file'; exit 1; }
   
 #Extract the Hamlib source code files
-tar -xvzf hamlib-4.0~rc3.tar.gz
+tar -xvzf hamlib-4.0~rc4.tar.gz
 
 #Make the directory containing the uncompressed Hamlib source code the current directory
-cd ~/src/WSJTX/hamlib-4.0~rc3
+cd ~/src/WSJTX/hamlib-4.0~rc4
 
 #Configure the Makefile for the Hamlib compile
 ./configure --prefix=/usr/local --enable-static
