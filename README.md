@@ -17,8 +17,6 @@ WSJT-X by Joe Taylor, K1JT, and currently supported by a group of very talented 
 
 Fldigi by Dave Freese, W1HKJ, and others is a digital mode console with integrated Hamlib rig control.  This console handles a multitude of digital modes including PSK-31, WeatherFax, Hellschreiber and CW.  There are two versions of the script. One installs Hamlib plus fldigi 4.1.17. The other also installs rigctl and flwkeyer. Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
 
-FreeDV, by David Witten, KDØEAG, and David Rowe, VK5DGR, is a GUI client for the Digital Voice mode. This script incorporates Codec2 and the LPCNet, neural network software, which supports the 2020 mode. Script runtime on a Raspberry Pi 4 is approximately 10 minutes.
-
 FreeDV, by David Witten, KDØEAG, and David Rowe, VK5DGR, is a GUI client for Digital Voice. This script incorporates Codec2 and the LPCNet, neural network software, which supports the 2020 mode. Script runtime on a Raspberry Pi 4 is approximately 10 minutes.
 
 qsstv is a digital or analog Slow Scan Television program with integrated Hamlib rig control. Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
