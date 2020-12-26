@@ -1,6 +1,6 @@
 #!/bin/sh
 #install wsjt-x (2.3.0-rc2) Hamlib (4.0)
-#N4XWE 12-14-2020
+#N4XWE 12-26-2020
 #Visit http://www.iquadlabs.com
 
 #Update the apt cache and upgrade the system packages to their latest versions
