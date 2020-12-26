@@ -1,5 +1,5 @@
 #!/bin/sh
-#install wsjt-x (2.3.0-rc2) Hamlib (4.0~rc4)
+#install wsjt-x (2.3.0-rc2) Hamlib (4.0)
 #N4XWE 12-14-2020
 #Visit http://www.iquadlabs.com
 
@@ -27,15 +27,15 @@ qttools5-dev qttools5-dev-tools qtbase5-dev-tools ||
 #Create a unique directory for the WSJT-X compile and make it the current directory
 mkdir -p ~/src/WSJTX && cd ~/src/WSJTX
 
-#Download the Hamlib 4.0~rc4 source code from Sourceforge
-wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.0~rc4/hamlib-4.0~rc4.tar.gz ||
+#Download the Hamlib 4.0 source code from Sourceforge
+wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.0/hamlib-4.0.tar.gz ||
   { echo 'Unable to download the HamLib source code file'; exit 1; }
   
 #Extract the Hamlib source code files
-tar -xvzf hamlib-4.0~rc4.tar.gz
+tar -xvzf hamlib-4.0.tar.gz
 
 #Make the directory containing the uncompressed Hamlib source code the current directory
-cd ~/src/WSJTX/hamlib-4.0~rc4
+cd ~/src/WSJTX/hamlib-4.0
 
 #Configure the Makefile for the Hamlib compile
 ./configure --prefix=/usr/local --enable-static
@@ -68,7 +68,8 @@ mkdir -p ~/src/WSJTX/wsjtx-2.3.0-rc2/build && cd ~/src/WSJTX/wsjtx-2.3.0-rc2/bui
 cmake ..
 
 #Compile and install the executable and support files for WSJT-X
-make && sudo make install ||
+#-j3 pecifies the number of CPU cores to run simultaneously during the compile
+make -j3 && sudo make install ||
   { echo 'Unable to install WSJT-X'; exit 1; }
 
 #Add the user pi to the dialout group
