@@ -1,6 +1,6 @@
 #!/bin/sh
-#install FLDIGI(4.1.17) w/Hamlib(4.0~rc4)
-#N4XWE 12-14-2020
+#install FLDIGI(4.1.17) w/Hamlib(4.0)
+#N4XWE 12-26-2020
 #Visit http://www.iquadlabs.com
 
 
@@ -19,15 +19,15 @@ python3-click python3-click-plugins libportaudio-dev libpulse-dev libportaudiocp
 #Create a unique directory for the FLDIGI compile and make it the current directory
 mkdir -p ~/src/FLDIGI && cd ~/src/FLDIGI
 
-#Download the Hamlib 4.0~rc4 source code from Sourceforge
-wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.0~rc4/hamlib-4.0~rc4.tar.gz ||
+#Download the Hamlib 4.0 source code from Sourceforge
+wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.0/hamlib-4.0.tar.gz ||
   { echo 'Unable to download the HamLib source code file'; exit 1; }
   
 #Extract the Hamlib source code files
-tar -xvzf hamlib-4.0~rc4.tar.gz
+tar -xvzf hamlib-4.0.tar.gz
 
-#Make the directory containing the uncompressed HamLib source code the current directory
-cd ~/src/FLDIGI/hamlib-4.0~rc4
+#Change the directory containing the uncompressed HamLib source code to the current directory
+cd ~/src/FLDIGI/hamlib-4.0
 
 #Configure the Makefile for the Hamlib compile
 ./configure --prefix=/usr/local --enable-static
@@ -54,14 +54,14 @@ wget -N https://sourceforge.net/projects/fldigi/files/fldigi/fldigi-4.1.17.tar.g
 tar -xvzf fldigi-4.1.17.tar.gz ||
   { echo 'Unable to extract fldigi'; exit 1; }
   
-#Make the directory containing the uncompressed fldigi source code the current directory
+#Change the directory containing the uncompressed fldigi source code to the current directory
 cd ~/src/FLDIGI/fldigi-4.1.17
 
 #Configure the Makefile for the fldigi compile
 ./configure
 
 #Compile and install fldigi
-make && sudo make install ||
+make -j3 && sudo make install ||
   { echo 'Unable to install fldigi'; exit 1; }
 
 #Make the unique directory previously created for the compile the current directory 
