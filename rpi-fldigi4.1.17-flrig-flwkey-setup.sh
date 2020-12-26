@@ -1,6 +1,6 @@
 #!/bin/sh
-#install fldigi(4.1.17) w/Hamlib(4.0~rc4) flrig(1.3.53) flwkey(1.2.3) 
-#N4XWE 12-14-2020
+#install fldigi(4.1.17) w/Hamlib(4.0) flrig(1.3.53) flwkey(1.2.3) 
+#N4XWE 12-26-2020
 #Visit http://www.iquadlabs.com
 
 
@@ -19,15 +19,15 @@ python3-click python3-click-plugins libportaudio-dev libpulse-dev libportaudiocp
 #Create a unique directory for the FLDIGI compile and make it the current directory
 mkdir -p ~/src/FLDIGI && cd ~/src/FLDIGI
 
-#Download the Hamlib 4.0~rc4 source code from Sourceforge
-wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.0~rc4/hamlib-4.0~rc4.tar.gz ||
+#Download the Hamlib 4.0 source code from Sourceforge
+wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.0/hamlib-4.0.tar.gz ||
   { echo 'Unable to download the HamLib source code file'; exit 1; }
   
 #Extract the Hamlib source code files
-tar -xvzf hamlib-4.0~rc4.tar.gz
+tar -xvzf hamlib-4.0.tar.gz
 
 #Make the directory containing the uncompressed Hamlib source code the current directory
-cd ~/src/FLDIGI/hamlib-4.0~rc4
+cd ~/src/FLDIGI/hamlib-4.0
 
 #Configure the Makefile for the Hamlib compile
 ./configure --prefix=/usr/local --enable-static
@@ -43,7 +43,7 @@ sudo ldconfig
 sudo apt -y install portaudio19-dev ||
 	{ echo 'Install portaudio19 failed'; exit 1;}
 
-#Make the unique directory previously created for the compile the current directory 
+#Change the unique directory previously created for the compile to the current directory 
 cd ~/src/FLDIGI
 
 #Download the fldigi-4.1.17 source code from Sourceforge
@@ -54,17 +54,17 @@ wget -N https://sourceforge.net/projects/fldigi/files/fldigi/fldigi-4.1.17.tar.g
 tar -xvzf fldigi-4.1.17.tar.gz ||
   { echo 'Unable to extract fldigi'; exit 1; }
   
-#Make the directory containing the uncompressed fldigi source code the current directory
+#Change the directory containing the uncompressed fldigi source code to the current directory
 cd ~/src/FLDIGI/fldigi-4.1.17
 
 #Configure the Makefile for the fldigi compile
 ./configure
 
 #Compile and install fldigi
-make && sudo make install ||
+make -j3 && sudo make install ||
   { echo 'Unable to install fldigi'; exit 1; }
 
-#Make the unique directory previously created for the compile the current directory 
+#Chang the unique directory previously created for the compile to the current directory 
 cd ~/src/FLDIGI
 
 #Download the flrig 1.3.53 source code from Sourceforge
@@ -75,7 +75,7 @@ wget -N https://sourceforge.net/projects/fldigi/files/flrig/flrig-1.3.53.tar.gz 
 tar -xvzf flrig-1.3.53.tar.gz ||
   { echo 'Unable to extract flrig'; exit 1; }
   
-#Make the directory containing the uncompressed flrig source code the current directory
+#Change the directory containing the uncompressed flrig source code to the current directory
 cd ~/src/FLDIGI/flrig-1.3.53
 
 #Configure the Makefile for the flrig compile
@@ -85,7 +85,7 @@ cd ~/src/FLDIGI/flrig-1.3.53
 make && sudo make install ||
   { echo 'Unable to install flrig'; exit 1; }
   
-#Make the unique directory previously created for the compile the current directory 
+#Change the unique directory previously created for the compile to the current directory 
 cd ~/src/FLDIGI
 
 #Download the flwkey-1.2.3 source code from Sourceforge
@@ -96,17 +96,17 @@ wget -N https://sourceforge.net/projects/fldigi/files/flwkey/flwkey-1.2.3.tar.gz
 tar -xvzf flwkey-1.2.3.tar.gz ||
   { echo 'Unable to extract flwkey'; exit 1; }
   
-#Make the directory containing the uncompressed flwkey source code the current directory
+#Change the directory containing the uncompressed flwkey source code to the current directory
 cd ~/src/FLDIGI/flwkey-1.2.3
 
 #Configure the Makefile for the flwkey compile
 ./configure
 
 #Compile and install flwkey
-make && sudo make install ||
+make -j3 && sudo make install ||
   { echo 'Unable to install flwkey'; exit 1; }
 
-#Make the unique directory previously created for the compile the current directory 
+#Change the unique directory previously created for the compile to the current directory 
 cd ~/src/FLDIGI 
 
 #Download the setGPIO file
