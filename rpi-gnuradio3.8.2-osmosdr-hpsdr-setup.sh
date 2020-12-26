@@ -1,6 +1,6 @@
 #!/bin/sh
-#install GNU Radio w/Osmocom w/hpsdr
-#N4XWE 12-23-2020
+#install GNU Radio w/Osmocom w/HPSDR
+#N4XWE 12-26-2020
 #Visit http://www.iquadlabs.com
 
 #Update the apt cache and upgrade the system packages to their latest versions
@@ -47,7 +47,7 @@ cd ~/src/GNURadio
 #Clone the latest GNU Radio source code from Github
 git clone https://github.com/gnuradio/gnuradio.git
 
-#Make the directory containing the gnuradio source code the current directory
+#Change the directory containing the gnuradio source code to the current directory
 cd ~/src/GNURadio/gnuradio
 
 #Checkout the maintained version of GNU Radio 3.8 from the cloned GNU Radio repository
@@ -64,13 +64,13 @@ cmake -DNEON_SIMD_ENABLE=OFF -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr
 make -j3 && sudo make install ||
   { echo 'Unable to install gnuradio'; exit 1; }
   
-#Make the unique directory previously created for the GNU Radio compile the current directory 
+#Change the unique directory previously created for the GNU Radio compile to the current directory 
 cd ~/src/GNURadio
 
 #Clone the latest gr-osmosdr source block code from osmocom.org
 git clone git://git.osmocom.org/gr-osmosdr
 
-#Make the directory containing the gr-osmosdr source code the current directory
+#Change the directory containing the gr-osmosdr source code to the current directory
 cd ~/src/GNURadio/gr-osmosdr
 
 #Create a directory for an indirect build of gr-osmosdr and make it the current directory
@@ -86,13 +86,13 @@ make && sudo make install ||
 #Link the gr-osmosdr library files
 sudo ldconfig
 
-#Make the unique directory previously created for the GNU Radio compile the current directory 
+#Change the unique directory previously created for the GNU Radio compile to the current directory 
 cd ~/src/GNURadio
 
 #Clone the latest gr-hpsdr source block code from github
 git clone https://github.com/Tom-McDermott/gr-hpsdr.git
 
-#Make the directory containing the gr-hpsdr 3.8 source code the current directory
+#Change the directory containing the gr-hpsdr 3.8 source code to the current directory
 cd ~/src/GNURadio/gr-hpsdr
 
 #Checkout the gr-hpsdr source code from the cloned gr-hpsdr repository
@@ -105,7 +105,7 @@ mkdir -p ~/src/GNURadio/gr-hpsdr/build && cd ~/src/GNURadio/gr-hpsdr/build
 cmake .. 
 
 #Compile and install the gr-hpsdr 3.8 source block
-make && sudo make install ||
+make -j3 && sudo make install ||
   { echo 'Unable to install gr-hpsdr'; exit 1; }
   
 #Link the gr-hpsdr library files
