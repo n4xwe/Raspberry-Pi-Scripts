@@ -53,7 +53,7 @@ Icon=/usr/local/share/hpsdr.png
 Terminal=false
 Type=Application
 Categories=Other" > ~/Desktop/pihpsdr.desktop ||
-   { echo 'Unable to setup FreeDV icon'; exit 1;}
+   { echo 'Unable to setup the PiHPSDR icon'; exit 1;}
 
 
 #If the Start button appears in the Discovery window, left click on it to start PiHPSDR.  If the Subnet! 
