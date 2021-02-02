@@ -1,6 +1,6 @@
 #!/bin/sh
-#install QSSTV(9.4.4) w/HamLib(4.0)
-#N4XWE 12-26-2020
+#install QSSTV(9.4.4) w/HamLib(4.1)
+#N4XWE 2-2-2021
 #Visit http://www.iquadlabs.com
 
 
@@ -14,21 +14,21 @@ sudo apt -y install g++ libfftw3-dev qt5-default libpulse-dev libasound2-dev lib
 #Create a unique directory for the QSSTV compile and make it the current directory
 mkdir -p ~/src/QSSTV && cd ~/src/QSSTV
 
-#Download the Hamlib 4.0 source code from Sourceforge
-wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.0/hamlib-4.0.tar.gz ||
+#Download the Hamlib 4.1 source code from Sourceforge
+wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.1/hamlib-4.1.tar.gz ||
   { echo 'Unable to download the Hamlib source code file'; exit 1; }
   
 #Extract the Hamlib source code files
-tar -xvzf hamlib-4.0.tar.gz
+tar -xvzf hamlib-4.1.tar.gz
 
 #Change the directory containing the uncompressed HamLib source code to the current directory
-cd ~/src/QSSTV/hamlib-4.0
+cd ~/src/QSSTV/hamlib-4.1
 
 #Configure the Makefile for the Hamlib compile
 ./configure --prefix=/usr/local --enable-static
 
 #Compile and install the Hamlib libraries
-make && sudo make install ||
+make -j 3 && sudo make install ||
   { echo 'Unable to install the HamLib Libraries'; exit 1; }
 
 #Link the HamLib library files
@@ -51,7 +51,7 @@ cd ~/src/QSSTV/qsstv_9.4.4
 qmake
 
 #Compile and install QSSTV
-make -j3 && sudo make install ||
+make -j 3 && sudo make install ||
   { echo 'Unable to install QSSTV'; exit 1; }
   
 #Copy the qsstv icon to a persistent system directory
