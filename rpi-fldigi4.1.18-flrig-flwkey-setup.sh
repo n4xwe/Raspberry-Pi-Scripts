@@ -61,7 +61,7 @@ cd ~/src/FLDIGI/fldigi-4.1.18
 ./configure
 
 #Compile and install fldigi
-make -j3 && sudo make install ||
+make -j 3 && sudo make install ||
   { echo 'Unable to install fldigi'; exit 1; }
 
 #Chang the unique directory previously created for the compile to the current directory 
