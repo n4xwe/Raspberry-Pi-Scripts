@@ -1,6 +1,6 @@
 #!/bin/sh
-#install fldigi(4.1.18) w/Hamlib(4.1) flrig(1.3.53) flwkey(1.2.3) 
-#N4XWE 2-1-2021
+#install fldigi(4.1.18) w/Hamlib(4.1) flrig(1.3.54) flwkey(1.2.3) 
+#N4XWE 2-7-2021
 #Visit http://www.iquadlabs.com
 
 
@@ -67,16 +67,16 @@ make -j3 && sudo make install ||
 #Chang the unique directory previously created for the compile to the current directory 
 cd ~/src/FLDIGI
 
-#Download the flrig 1.3.53 source code from Sourceforge
-wget -N https://sourceforge.net/projects/fldigi/files/flrig/flrig-1.3.53.tar.gz ||
+#Download the flrig 1.3.54 source code from Sourceforge
+wget -N https://sourceforge.net/projects/fldigi/files/flrig/flrig-1.3.54.tar.gz ||
   { echo 'Unable to download the flrig source code file'; exit 1; }
 
 #Extract the flrig source code files
-tar -xvzf flrig-1.3.53.tar.gz ||
+tar -xvzf flrig-1.3.54.tar.gz ||
   { echo 'Unable to extract flrig'; exit 1; }
   
 #Change the directory containing the uncompressed flrig source code to the current directory
-cd ~/src/FLDIGI/flrig-1.3.53
+cd ~/src/FLDIGI/flrig-1.3.54
 
 #Configure the Makefile for the flrig compile
 ./configure
