@@ -11,7 +11,7 @@ All of the scripts have detailed inline comments that explain the function of ev
 
 PiHPSDR, by John Melton, G0ORX, is an excellent lightweight SDR Console that works with a variety of radios.  It uses the WDSP library for signal processing, has the capability of implementing Puresignal adaptive pre-distortion, has an intuitive interface and is very stable. PiHPSDR interfaces with other programs through the Pulse audio transport system.  The current version is 2.0-rc15. Script runtime time on a Raspberry Pi 4 is approximately 10 minutes.
 
-GNU Radio, originally developed by Eric Blossom, K7GNU, and Matt Ettus, N2MJI, is a powerful DSP toolkit. It has a graphical interface that allows allows almost any DSP function to be performed on RF derived signals.  Script runtime on a Raspberry Pi 4 is 3 hours and 30 minutes.
+GNU Radio, originally developed by Eric Blossom, K7GNU, and Matt Ettus, N2MJI, is a powerful DSP toolkit. It has a graphical interface that allows allows almost any DSP function to be performed on RF derived signals.  Script runtime on a Raspberry Pi 4 is roughly 2 hours and 30 minutes.  The script that starts with rpi-mate is built for the HamSCI Tangerine-SDR project and works only on Ubuntu Mate 20.10 for the Raspberry Pi.  It installs GNU Radio 3.8.2 and builds the gr-grnet, gr-digital_rf, limited gr-osmosdr and gr-hpsdr blocks into the GNU Radio Companion.
 
 WSJT-X by Joe Taylor, K1JT, and currently supported by a group of very talented developers is weak signal software that includes, among other programs, FT8, FT4, JT8 and WSPR. The script also compiles the most recent version of the Hamlib library for integrated rig control,  Script runtime on a Raspberry Pi 4 is 35 minutes.
 
