@@ -43,18 +43,6 @@ sed -i 's/GPIO_INCLUDE=GPIO/#GPIO_INCLUDE=GPIO/' ~/src/PIHPSDR/pihpsdr/Makefile
 #Compile and the PiHPSDR souce code
 make -j 3 && make release && sudo make install
 
-#Return to the $HOME directory
-#cd ~
-
-#Compress the release directory into a tarball
-#tar xvf ~/src/PIHPSDR/pihpsdr/release/pihpsdr.tar
-
-#Change the current directory to the pihpsdr root compile directory
-#cd ~/src/PIHPSDR/pihpsdr
-
-#Run the installation BASH script
-#sh ./install.sh
-
 #Copy the hpsdr.png icon to a system directory
 sudo cp ~/src/PIHPSDR/pihpsdr/release/pihpsdr/hpsdr.png /usr/local/share
 
