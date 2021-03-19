@@ -19,4 +19,6 @@ Fldigi by Dave Freese, W1HKJ and others is a digital mode console with integrate
 
 FreeDV, by David Witten, KDØEAG, and David Rowe, VK5DGR, is a GUI client for Digital Voice. This script incorporates Codec2 and the LPCNet, neural network software, which supports the 2020 mode. Script runtime on a Raspberry Pi 4 is approximately 10 minutes.
 
+Dream is an AM/DRM software receiver written in C++ and Qt. Script runtime on a Raspberry Pi 4 is approximately 20 minutes
+
 qsstv is a digital or analog Slow Scan Television program with integrated Hamlib rig control. Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
