@@ -57,10 +57,6 @@ $QMAKE_EXEC
 make $MAKE_ARGS
 sudo cp dream /usr/local/bin/dream
 sudo cp src/GUI-QT/res/MainIcon.svg /usr/share/icons/dream.svg
-
-Comment=Software Digital Radio Mondiale Receiver\nTryExec=/usr/local/bin/dream\nExec=/usr/local/bin/dream\nIcon=dream.svg\nCategories=Audio;AudioVideo;Science;Electronics\n" | tee dream.desktop
-cp dream.desktop ~/.local/share/applications/dream.desktop
-cd ..
 sudo ldconfig
 
 #Add a Dream icon to the Desktop
