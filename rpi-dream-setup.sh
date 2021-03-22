@@ -42,8 +42,8 @@ cd faac-1.28
 make $MAKE_ARGS
 sudo cp include/faaccfg.h  include/faac.h /usr/include
 sudo cp libfaac/.libs/libfaac.so.0.0.0 /usr/local/lib/libfaac_drm.so.0.0.0
-#sudo ln -s /usr/local/lib/libfaac_drm.so.0.0.0 /usr/local/lib/libfaac_drm.so.0
-#sudo ln -s /usr/local/lib/libfaac_drm.so.0.0.0 /usr/local/lib/libfaac_drm.so
+sudo ln -s /usr/local/lib/libfaac_drm.so.0.0.0 /usr/local/lib/libfaac_drm.so.0
+sudo ln -s /usr/local/lib/libfaac_drm.so.0.0.0 /usr/local/lib/libfaac_drm.so
 sudo ldconfig
 cd ..
 
@@ -69,7 +69,7 @@ Name=Dream
 GenericName=DRM Receiver
 Comment=Software Digital Radio Mondiale Receiver
 Exec=/usr/local/bin/dream
-Icon=dream.svg
+Icon=/usr/share/icons/dream.svg
 Terminal=false
 Type=Application
 Categories=Other" > ~/Desktop/dream.desktop ||
