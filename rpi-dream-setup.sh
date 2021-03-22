@@ -1,6 +1,6 @@
 #!/bin/bash
 #install Dream(2.2) with FAAD2(2.7) and FAAC(1.28)
-#N4XWE 3-19-2021
+#N4XWE 3-21-2021
 #Compiled on RaspiOS-buster 2021-01-11 32-bit
 
 set -e
@@ -57,6 +57,7 @@ $QMAKE_EXEC
 make $MAKE_ARGS
 sudo cp dream /usr/local/bin/dream
 sudo cp src/GUI-QT/res/MainIcon.svg /usr/share/icons/dream.svg
+cd ..
 sudo ldconfig
 
 #Add a Dream icon to the Desktop
