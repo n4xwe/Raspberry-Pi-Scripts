@@ -76,6 +76,6 @@ Categories=Other" > ~/Desktop/dream.desktop ||
 rm dream_2.2.orig.tar.gz
 rm faac-1.28.tar.gz
 rm faad2-2.7.tar.gz
-rm -rf ./dream
+rm -rf ./dream-2.2
 rm -rf ./faac-1.28
 rm -rf ./faad2-2.7
