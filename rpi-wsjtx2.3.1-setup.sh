@@ -1,7 +1,7 @@
 #!/bin/sh
 #install wsjt-x(2.3.1) Hamlib(4.1)
 #N4XWE 3-28-2021
-#Visit http://www.iquadlabs.com
+#Compiled on RaspiOS-buster dtd 2021-01-11 32-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt update && sudo apt upgrade -y
