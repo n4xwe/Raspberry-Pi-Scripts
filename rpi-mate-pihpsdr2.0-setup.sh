@@ -1,8 +1,7 @@
 #!/bin/sh
 #install PiHPSDR(2.0-rc15) with wdsp(1.18)
 #N4XWE 3-1-2020
-#Visit http://www.iquadlabs.com
-
+#Test Compiled on RaspiOS-buster dtd 2021-01-11 32-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt update && sudo apt upgrade -y
