@@ -73,5 +73,5 @@ cmake ..
 make -j 3 && sudo make install ||
   { echo 'Unable to install WSJT-X'; exit 1; }
 
-#Add the user to the dialout group
+#Add the current user to the dialout group
 sudo usermod -a -G dialout $USER
