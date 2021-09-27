@@ -8,7 +8,7 @@
 sudo apt update && sudo apt upgrade -y
 #Download and install the dependencies
 sudo apt -y install git libfftw3-dev libgtk-3-dev libasound2-dev libusb-1.0-0-dev \
-wiringpi libsoapysdr-dev libpulse-dev ||
+wiringpi libsoapysdr-dev libpulse-dev libi2c-dev ||
 	{ echo 'Dependency installation failed'; exit 1; }
 
 #Create a unique directory for the PiHPSDR compile and make it the current directory
