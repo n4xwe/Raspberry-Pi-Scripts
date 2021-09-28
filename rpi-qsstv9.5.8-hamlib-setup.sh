@@ -1,5 +1,5 @@
 #!/bin/sh
-#install QSSTV(9.5.8) w/HamLib(4.3)
+#install QSSTV(9.5.8) w/HamLib(4.3.1)
 #N4XWE 9-27-2021
 #Visit http://www.iquadlabs.com
 
