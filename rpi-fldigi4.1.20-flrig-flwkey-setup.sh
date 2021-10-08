@@ -13,7 +13,8 @@ g++ libboost-all-dev libgmp-dev swig python3-numpy python3-mako python3-sphinx p
 libusb-1.0-0 libgd-dev libhamlib-utils libsamplerate0 libsamplerate0-dev libsigx-2.0-dev libsigc++-1.2-dev libpopt-dev \
 tcl8.5-dev libspeex-dev libasound2-dev libgd-dev alsa-utils libgcrypt20-dev libpopt-dev libfltk1.3-dev libpng++-dev \
 libsdl1.2-dev libgsl-dev libqwt-qt5-dev libqt5opengl5-dev python3-pyqt5 liblog4cpp5-dev libzmq3-dev python3-yaml \
-python3-click python3-click-plugins libportaudio-dev libpulse-dev libportaudiocpp0 libblas-dev liblapack-dev ||
+python3-click python3-click-plugins libportaudio-dev libpulse-dev libportaudiocpp0 libblas-dev liblapack-dev \
+libflxmlrpc-dev ||
 	{ echo 'Dependency installation failed'; exit 1;}
   
 #Create a unique directory for the FLDIGI compile and make it the current directory
