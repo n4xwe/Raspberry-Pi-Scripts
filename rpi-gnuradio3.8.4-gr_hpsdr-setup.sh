@@ -6,7 +6,7 @@
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt update && sudo apt upgrade -y
 
-#Remove and purge all of the Portaudio 2.0 and libjack-jack dev files
+If they have been installed, purge the Portaudio 2.0 and the libjack-jackd2 dev packages
 sudo apt purge -y libportaudiocpp0 libportaudio2 libportaudio19-dev \
 libjack-jackd2-dev
 
