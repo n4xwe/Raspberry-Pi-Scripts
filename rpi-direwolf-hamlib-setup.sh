@@ -1,5 +1,5 @@
 #!/bin/sh
-#install direwolf(Stable) w/HamLib(4.3.1)
+#install direwolf(dev) w/HamLib(4.3.1)
 #N4XWE 10-12-2021
 #Visit http://www.iquadlabs.com
 
@@ -43,7 +43,7 @@ git clone https://www.github.com/wb2osz/direwolf  ||
   { echo 'Unable to download the direwolf source code'; exit 1; }
  
 #Checkout the stable version of the direwolf source code
-git checkout stable
+git checkout dev
 
 #Change the directory containing the direwolf source code to the current directory
 cd ~/src/DIREWOLF/direwolf
@@ -51,8 +51,8 @@ cd ~/src/DIREWOLF/direwolf
 #Create an indirect build directory and change it to the current directory
 mkdir build && cd build
   
-#Configure the Makefile for the direwolf compile
-cmake ../
+#Configure the Makefile for the direwolf compile to run a self-test
+cmake -DUNITTEST=1 ../
 
 #Compile and install direwolf
 make -j3 && sudo make install 
@@ -60,13 +60,13 @@ make install-conf ||
   { echo 'Unable to install direwolf'; exit 1; }
   
 #Install an direwolf icon on the RPi desktop
-echo "[Desktop Entry]
-Name=Direwolf
-GenericName=Amateur Radio Software Modem
-Comment=Software Modem
-Exec=/usr/local/bin/direwolf
-Icon=/usr/local/share/pixmaps/direwolf_icon.png
-Terminal=false
-Type=Application
-Categories=Other;HamRadio;" > /home/pi/Desktop/direwolf.desktop ||
-   { echo 'Unable to setup the Direwolf icon'; exit 1;}
+#echo "[Desktop Entry]
+#Name=Dire Wolf
+#GenericName=Amateur Radio Software Modem
+#Comment=Software Modem
+#Exec=/usr/local/bin/direwolf
+#Icon=/usr/local/share/pixmaps/direwolf_icon.png
+#Terminal=false
+#Type=Application
+#Categories=Other;HamRadio;" > /home/pi/Desktop/direwolf.desktop ||
+#   { echo 'Unable to setup the Direwolf icon'; exit 1;}
