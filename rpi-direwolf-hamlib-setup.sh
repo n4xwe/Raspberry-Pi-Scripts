@@ -1,5 +1,5 @@
 #!/bin/sh
-#install direwolf(9.5.8) w/HamLib(4.3.1)
+#install direwolf(Stable) w/HamLib(4.3.1)
 #N4XWE 10-12-2021
 #Visit http://www.iquadlabs.com
 
@@ -42,8 +42,8 @@ cd ~/src/DIREWOLF
 git clone https://www.github.com/wb2osz/direwolf  ||
   { echo 'Unable to download the direwolf source code'; exit 1; }
  
-#Checkout the dev version of the direwolf source code
-git checkout dev
+#Checkout the stable version of the direwolf source code
+git checkout stable
 
 #Change the directory containing the direwolf source code to the current directory
 cd ~/src/DIREWOLF/direwolf
@@ -55,7 +55,8 @@ mkdir build && cd build
 cmake ../
 
 #Compile and install direwolf
-make -j3 && sudo make install ||
+make -j3 && sudo make install 
+make install-conf ||
   { echo 'Unable to install direwolf'; exit 1; }
   
 #Install an direwolf icon on the RPi desktop
