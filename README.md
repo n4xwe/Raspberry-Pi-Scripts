@@ -1,7 +1,7 @@
 # RPi-Scripts
 BASH Scripts that Install Ham Radio Software on the Raspberry Pi
 
-These BASH scripts install either GNU Radio, WSJT-X, PiHPSDR, Fldigi, FreeDV or qsstv on a Raspberry Pi using the Raspberry Pi (formerly Raspbian) Operating System. The scripts titled rpi-(name of the package) have been tested on an 8GB RPi 4 running the May 7, 2021, release of the Raspberry Pi OS 32-bit version.  The scripts titled rpi-mate-(name of the package) have been tested on an 8GB RPi 4 running the 64-bit version of Ubuntu MATE 20.10. The scripts titled rpi-ubuntu-(name of the package) have been tested on an 8GB RPi 4 running the of Ubuntu 21.04 ARM 64-bit version. They may or may not work successfully on other models of the Raspberry Pi or other versions of the Raspberry Pi OS, Ubuntu ARM or Ubuntu MATE Operating Systems.  
+These BASH scripts install either GNU Radio, WSJT-X, PiHPSDR, Fldigi, FreeDV, tweaktime or qsstv on a Raspberry Pi using the Raspberry Pi (fomerly Raspbian) Operating System. The scripts titled rpi-(name of the package) have been tested on an 8GB RPi 4 running the May 7, 2021, release of the Raspberry Pi OS 32-bit version. The scripts titled rpi-bullseye-(name of the package) have been tested on an 8GB RPi 4 running the October 30, 2021, release of the Raspberry Pi OS 32-bit version. The scripts titled rpi-mate-(name of the package) have been tested on an 8GB RPi 4 running the 64-bit version of Ubuntu MATE 20.10. The scripts titled rpi-ubuntu-(name of the package) have been tested on an 8GB RPi 4 running the of Ubuntu 21.04 ARM 64-bit version. They may or may not work successfully on other models of the Raspberry Pi or other versions of the Raspberry Pi OS, Ubuntu ARM or Ubuntu MATE Operating Systems.  
 
 In order for the script to function correctly you must have a reasonable connection to the Internet.  The suggested method of launching the scripts is to create a separate directory named src off of the $HOME directory (/home/pi/src).  Copy the script file to the src directory.  Using the Command Line change the file permissions of the script to allow its execution (chmod +x name-of-the script.sh).  The same result can be achieved on the Desktop by doing a right click on your script and choosing Properties from the pop-up menu, then switch to the Permissions tab, opposite "Execute" change Nobody to Anyone.  To start the script from the Command Line preface the script name with a dot slash (./name-of-the-script.sh) and press the Enter key.  
 
@@ -20,5 +20,7 @@ Fldigi by Dave Freese, W1HKJ and others is a digital mode console with integrate
 FreeDV, by David Witten, KDØEAG, and David Rowe, VK5DGR, is a GUI client for Digital Voice. This script incorporates Codec2 and the LPCNet, neural network software, which supports the 2020 mode. Script runtime on a Raspberry Pi 4 is approximately 10 minutes.
 
 Dream is an AM/DRM software receiver written in C++ and Qt. Script runtime on a Raspberry Pi 4 is approximately 20 minutes
+
+tweaktime, by Matt Roberts, KK5JY allows adjusting the system clock to provide accurate time synchronization for WSJT-X using the DT values in the WSJT-X GUI. Please take a look at kk5jy.net to find the instructions for using it.
 
 qsstv is a digital or analog Slow Scan Television program with integrated Hamlib rig control. Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
