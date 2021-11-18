@@ -1,11 +1,12 @@
 #!/bin/sh
 #install PiHPSDR(2.0.8-rc1) with wdsp(1.18)
-#N4XWE 11-8-2021
-#Visit
+#N4XWE 11-18-2021
+#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt update && sudo apt upgrade -y
+
 #Download and install the dependencies
 sudo apt -y install git libfftw3-dev libgtk-3-dev libasound2-dev libusb-1.0-0-dev \
 libsoapysdr-dev libpulse-dev libi2c-dev libgpiod-dev ||
