@@ -1,7 +1,7 @@
 #!/bin/sh
 #install wsjt-x(2.5.1) Hamlib(4.3.1)
-#N4XWE 10-23-2021
-#Compiled on RaspiOS-buster dtd 2021-05-07 32-bit
+#N4XWE 11-17-2021
+#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt update && sudo apt upgrade -y
