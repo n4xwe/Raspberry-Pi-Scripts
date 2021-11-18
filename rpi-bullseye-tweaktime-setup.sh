@@ -1,7 +1,8 @@
 #!/bin/sh
 #install tweaktime 
-#N4XWE 11-11-2021
-#Visit
+#N4XWE 11-17-2021
+#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit
+
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
@@ -31,20 +32,6 @@ make -j3 && sudo make install ||
 
   
 
-#Copy the hpsdr.png icon to a system directory
-#sudo cp ~/src/PIHPSDR/pihpsdr/release/pihpsdr/hpsdr.png /usr/local/share
-
-#Add a PiHPSDR icon to the Desktop
-#echo "[Desktop Entry]
-#Name=PiHPSDR
-#GenericName=SDR Console
-#Comment=PiHPSDR Console
-#Exec=/usr/local/bin/pihpsdr
-#Icon=/usr/local/share/hpsdr.png
-#Terminal=false
-#Type=Application
-#Categories=Other" > ~/Desktop/pihpsdr.desktop ||
-   #{ echo 'Unable to setup the PiHPSDR icon'; exit 1;}
 
 
 
