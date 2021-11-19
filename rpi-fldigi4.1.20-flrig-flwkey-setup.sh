@@ -1,6 +1,7 @@
 #!/bin/sh
 #install fldigi(4.1.20) w/Hamlib(4.3.1) flrig(1.4.3) flwkey(1.2.3) 
 #N4XWE 11-19-2021
+#Compiled on Raspberry Pi OS buster 2021-5-27
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
