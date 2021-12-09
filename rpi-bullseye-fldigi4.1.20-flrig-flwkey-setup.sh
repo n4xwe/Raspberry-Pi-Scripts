@@ -1,6 +1,6 @@
 #!/bin/sh
-#install fldigi(4.1.20) w/Hamlib(4.3) flrig(1.4.3) flwkey(1.2.3) 
-#N4XWE 11-17-2021
+#install fldigi(4.1.20) w/Hamlib(4.4) flrig(1.4.3) flwkey(1.2.3) 
+#N4XWE 12-9-2021
 #Visit http://www.iquadlabs.com
 
 
@@ -20,15 +20,15 @@ libflxmlrpc-dev ||
 #Create a unique directory for the FLDIGI compile and make it the current directory
 mkdir -p ~/src/FLDIGI && cd ~/src/FLDIGI
 
-#Download the Hamlib 4.3 source code from Sourceforge
-wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.3/hamlib-4.3.tar.gz ||
+#Download the Hamlib 4.4 source code from Sourceforge
+wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.4/hamlib-4.4.tar.gz ||
   { echo 'Unable to download the HamLib source code file'; exit 1; }
   
 #Extract the Hamlib source code files
-tar -xvzf hamlib-4.3.tar.gz
+tar -xvzf hamlib-4.4.tar.gz
 
 #Make the directory containing the uncompressed Hamlib source code the current directory
-cd ~/src/FLDIGI/hamlib-4.3
+cd ~/src/FLDIGI/hamlib-4.4
 
 #Configure the Makefile for the Hamlib compile
 ./configure --prefix=/usr/local --enable-static
