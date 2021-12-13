@@ -1,6 +1,6 @@
 #!/bin/sh
 #install wsjt-x(2.5.2) Hamlib(4.4)
-#N4XWE 11-17-2021
+#N4XWE 12-13-2021
 #Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
@@ -26,18 +26,7 @@ qttools5-dev qttools5-dev-tools qtbase5-dev-tools ||
 	{ echo 'Dependency installation failed'; exit 1; }
 
 #Create a unique directory for the WSJT-X compile and make it the current directory
-mkdir -p ~/src/WSJTX/build/indi-core && cd ~/src/WSJTX
-
-cd ~/src/WSJTX
-
-git clone --depth=1 https://github.com/indilib/indi.git
-
-cd build/indi-core
-
-cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug ~/src/WSJTX/indi
-
-sudo make install
-
+mkdir -p ~/src/WSJTX && cd ~/src/WSJTX
 
 #Download the Hamlib 4.4 source code from Sourceforge
 wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.4/hamlib-4.4.tar.gz ||
