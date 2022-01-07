@@ -1,6 +1,6 @@
 #!/bin/sh
-#install wsjt-x(2.5.2) Hamlib(4.4)
-#N4XWE 12-13-2021
+#install wsjt-x(2.5.4) Hamlib(4.4)
+#N4XWE 1-07-2022
 #Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
@@ -56,14 +56,14 @@ export CFLAGS='-O2 -march=native -mtune=native'
 cd ~/src/WSJTX
 
 #Download the WSJT-X source code from Sourceforge
-wget -N https://sourceforge.net/projects/wsjt/files/wsjtx-2.5.2/wsjtx-2.5.2.tgz ||
+wget -N https://sourceforge.net/projects/wsjt/files/wsjtx-2.5.4/wsjtx-2.5.4.tgz ||
   { echo 'Unable to download the WSJT-X source code file'; exit 1; }
   
 #Extract the WSJT-X source code files
-tar -zxvf wsjtx-2.5.2.tgz
+tar -zxvf wsjtx-2.5.4.tgz
 
 #Create a directory for an indirect build of WSJT-X and make it the current directory
-mkdir -p ~/src/WSJTX/wsjtx-2.5.2/build && cd ~/src/WSJTX/wsjtx-2.5.2/build
+mkdir -p ~/src/WSJTX/wsjtx-2.5.4/build && cd ~/src/WSJTX/wsjtx-2.5.4/build
 
 #Configure the Makefile for the WSJT-X compile
 cmake ../
