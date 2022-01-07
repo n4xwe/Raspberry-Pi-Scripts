@@ -13,16 +13,16 @@ sudo apt remove libhamlib2 -y
 #Add all of the dependencies
 sudo apt install -y git cmake automake libtool build-essential \
 asciidoc gfortran subversion libwxgtk3.0-gtk3-dev libusb-1.0-0-dev \
-portaudio19-dev libsamplerate0-dev \
-libcfitsio-dev zlib1g-dev libgsl-dev libcurl4-gnutls-dev libtheora-dev \
+portaudio19-dev libsamplerate0-dev libcfitsio-dev \
+zlib1g-dev libgsl-dev libcurl4-gnutls-dev libtheora-dev \
 libasound2-dev libao-dev libfftw3-dev libgsm1-dev libtiff-dev \
 libjpeg-dev libxft-dev libxinerama-dev libxcursor-dev asciidoctor \
 libboost-all-dev libqt5multimedia5 libqt5multimedia5-plugins \
 libqt5multimediaquick5 libreadline-dev libqt5multimediawidgets5 \
 libqt5serialport5-dev libqt5svg5-dev libqt5widgets5 swig \
 libgd-dev libqt5sql5-sqlite libqwt-qt5-dev libsndfile1-dev \
-libudev-dev qtmultimedia5-dev texinfo xsltproc \
-qttools5-dev qttools5-dev-tools qtbase5-dev-tools ||
+libudev-dev qtmultimedia5-dev texinfo xsltproc qttools5-dev \
+qttools5-dev-tools qtbase5-dev-tools ||
 	{ echo 'Dependency installation failed'; exit 1; }
 
 #Create a unique directory for the WSJT-X compile and make it the current directory
