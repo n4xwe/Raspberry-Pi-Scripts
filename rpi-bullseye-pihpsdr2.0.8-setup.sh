@@ -1,7 +1,7 @@
 #!/bin/sh
 #install PiHPSDR(2.0.8-rc1) with wdsp(1.18)
-#N4XWE 11-18-2021
-#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit
+#N4XWE 1-30-2022
+#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit and RaspiOS-bullseye dtd 2022-1-28 32-bit
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
@@ -15,7 +15,7 @@ libsoapysdr-dev libpulse-dev libi2c-dev libgpiod-dev ||
 #Create a unique directory for the PiHPSDR compile and make it the current directory
 mkdir -p ~/src/PIHPSDR && cd ~/src/PIHPSDR
 
-#Clone the most recent version of the wdsp source code from github
+#Download the most recent version of the wdsp source code from github
 git clone https://github.com/g0orx/wdsp ||
   { echo 'Unable to download the wdsp source code file'; exit 1; }
  
@@ -32,7 +32,7 @@ sudo ldconfig
 #Make the unique directory previously created for the compile the current directory 
 cd ~/src/PIHPSDR
 
-#Clone the most recent version of the PiHPSDR source code from github
+#Download the most recent version of the PiHPSDR source code from github
 git clone https://github.com/g0orx/pihpsdr
 
 #Make the directory containing the pihpsdr source code the current directory
