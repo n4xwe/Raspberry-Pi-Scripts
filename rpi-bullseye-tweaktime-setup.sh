@@ -1,7 +1,7 @@
 #!/bin/sh
 #install tweaktime 
-#N4XWE 11-17-2021
-#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit
+#N4XWE 1-30-2022
+#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit and RaspiOS-bullseye dtd 2022-1-28 32-bit
 
 
 
