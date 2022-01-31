@@ -1,7 +1,7 @@
 #!/bin/sh
 #install wsjt-x(2.5.4) Hamlib(4.4)
-#N4XWE 1-07-2022
-#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit
+#N4XWE 1-30-2022
+#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit and RaspiOS-bullseye dtd 2022-1-28 32-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt update && sudo apt upgrade -y
@@ -48,7 +48,7 @@ make -j3 && sudo make install ||
 #Link the Hamlib library files
 sudo ldconfig
 
-#Set the CPU optimization Flags for compiling the WSJT-X source code
+#Set the Raspberry Pi CPU optimization Flags for compiling the WSJT-X source code
 export CXXFLAGS='-O2 -march=native -mtune=native'
 export CFLAGS='-O2 -march=native -mtune=native'
 
