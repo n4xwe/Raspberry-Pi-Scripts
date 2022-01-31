@@ -1,7 +1,7 @@
 #!/bin/sh
 #install fldigi(4.1.20) w/Hamlib(4.4) flrig(1.4.4) flwkey(1.2.3) 
-#N4XWE 12-9-2021
-#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit
+#N4XWE 1-30-2022
+#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit and RaspiOS-bullseye dtd 2022-1-28 32-bit
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
