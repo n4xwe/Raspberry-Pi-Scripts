@@ -1,5 +1,5 @@
 #!/bin/sh
-#install freedv (1.6.1) w/codec2 w/LPCNet 
+#install freedv (1.7.0) w/codec2 w/LPCNet 
 #N4XWE 9-28-2021
 #Visit http://www.iquadlabs.com
 
