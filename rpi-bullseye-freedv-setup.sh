@@ -14,7 +14,7 @@ libsndfile1-dev libjpeg9-dev libxft-dev libxinerama-dev libxcursor-dev \
 libspeex-dev libspeexdsp-dev libreadline-dev libhamlib-dev ||
 	{ echo 'Dependency download failed'; exit 1;}
 
-#Create a 2GB swapfile
+#Create a 2GB swapfile (For Memory<4GB uncoment to make a 2GB swapfile)
 #sudo fallocate -l 2G /swapfile
 #sudo chmod 600 /swapfile
 #sudo mkswap /swapfile
@@ -96,7 +96,7 @@ cmake -DCMAKE_BUILD_TYPE=Debug -DCODEC2_BUILD_DIR=~/src/FreeDV/codec2/build -DLP
 make && sudo make install ||
   { echo 'Unable to compile and install freedv-gui'; exit 1; }
 
-#Add odroid to the dialout user group
+#Add Pi to the dialout user group
 sudo usermod -a -G dialout pi
 
 #Add a FreeDV icon to the Desktop
@@ -109,4 +109,4 @@ Icon=/usr/local/share/icons/hicolor/64x64/apps/freedv.png
 Terminal=false
 Type=Application
 Categories=Other" > ~/Desktop/freedv.desktop ||
-   { echo 'Unable to setup FreeDV icon'; exit 1;}
+   { echo 'Unable to setup the FreeDV icon'; exit 1;}
