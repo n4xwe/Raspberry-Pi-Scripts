@@ -38,7 +38,7 @@ git clone https://github.com/g0orx/pihpsdr
 #Make the directory containing the pihpsdr source code the current directory
 cd ~/src/PIHPSDR/pihpsdr
 
-#Compile and install the PiHPSDR souce code
+#Compile and install the PiHPSDR source code
 make -j3 && sudo make install
 
 #Copy the hpsdr.png icon to a system directory
