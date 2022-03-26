@@ -17,7 +17,7 @@ python3-click python3-click-plugins libportaudio2 libpulse-dev libportaudiocpp0 
 autopoint debhelper dh-autoreconf dh-strip-nondeterminism dwz fltk1.3-doc fluid libarchive-cpio-perl libdebhelper-perl \
 libfile-stripnondeterminism-perl libfltk-cairo1.3 libfltk-forms1.3 libfltk-gl1.3 libfltk-images1.3 libfltk1.3 \
 libfltk1.3-dev libflxmlrpc-dev libflxmlrpc1 libmbedcrypto3 libmbedtls-dev libmbedtls12 \
-libmbedx509-0 libsub-override-perl po-debconf ||
+libmbedx509-0 libsub-override-perl po-debconf libudev-dev ||
 	{ echo 'Dependency installation failed'; exit 1;}
 	
 #Check to see if a previous version of Hamlib has been installed
