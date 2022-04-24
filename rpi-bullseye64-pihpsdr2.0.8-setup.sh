@@ -1,7 +1,7 @@
 #!/bin/sh
 #install PiHPSDR(2.0.8-rc1) with wdsp(1.18)
 #N4XWE 3-11-2022
-#Compiled on RaspiOS-bullseye dtd 2022-1-28 64-bit
+#Compiled on RaspiOS-bullseye dtd 2022-04-04 64-bit
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
