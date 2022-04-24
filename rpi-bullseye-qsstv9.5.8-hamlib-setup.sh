@@ -67,5 +67,5 @@ Exec=/usr/local/bin/qsstv
 Icon=/usr/local/share/applications/qsstv.png
 Terminal=false
 Type=Application
-Categories=Other;HamRadio;" > /home/pi/Desktop/qsstv.desktop ||
+Categories=Other;HamRadio;" > ~/Desktop/qsstv.desktop ||
    { echo 'Unable to setup the QSSTV icon'; exit 1;}
