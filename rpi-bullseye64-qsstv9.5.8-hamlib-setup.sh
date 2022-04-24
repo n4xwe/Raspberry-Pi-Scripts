@@ -1,7 +1,7 @@
 #!/bin/sh
 #install QSSTV(9.5.8) w/HamLib(4.4)
-#N4XWE 02-22-2022
-#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit
+#N4XWE 04-23-2022
+#Compiled on RaspiOS-bullseye dtd 2022-04-04 64-bit
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
