@@ -73,7 +73,7 @@ rm -Rf *
 #Configure the cmake file
 cmake -DLPCNET_BUILD_DIR=~/src/FreeDV/LPCNet/build ../ 
 
-#Remake Codec2 with LPCNet and install and link the libraries
+#Recompile Codec2 with LPCNet and install and link the libraries
 make && sudo make install && sudo ldconfig ||
   { echo 'Unable to Recompile Codec2 with LPCNet'; exit 1; }
   
