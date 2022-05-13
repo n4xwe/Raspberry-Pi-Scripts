@@ -56,6 +56,7 @@ Type=Application
 Categories=Other" > ~/Desktop/pihpsdr.desktop ||
    { echo 'Unable to setup the PiHPSDR icon'; exit 1;}
 
+# The following instructions are specific to the iQuadLabs IQ2 transceiver
 
 #If the Start button appears in the Discovery window, left click on it to start PiHPSDR.  If the Subnet! 
 #notification appears, right click on the Network icon in the upper right corner of the desktop.  From 
