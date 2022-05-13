@@ -1,7 +1,7 @@
 #!/bin/sh
 #install freedv (1.7.0) w/codec2 w/LPCNet 
-#N4XWE 05-09-2022
-#Compiled on RaspiOS-bullseye dtd 2022-04 64-bit
+#N4XWE 05-13-2022
+#Compiled on RaspiOS-bullseye dtd 2022-04-04 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt -y update && sudo apt -y upgrade
