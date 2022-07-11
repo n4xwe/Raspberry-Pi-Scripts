@@ -1,7 +1,7 @@
 #!/bin/sh
-#install fldigi(4.1.20) w/Hamlib(4.4) flrig(1.4.4) flwkey(1.2.3) 
-#N4XWE 1-30-2022
-#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit and RaspiOS-bullseye dtd 2022-1-28 32-bit
+#install fldigi(4.1.23) w/Hamlib(4.4) flrig(1.4.5) flwkey(1.2.3) 
+#N4XWE 7-11-2022
+#Not Tested
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
@@ -47,16 +47,16 @@ sudo apt -y install portaudio19-dev ||
 #Change the unique directory previously created for the compile to the current directory 
 cd ~/src/FLDIGI
 
-#Download the fldigi-4.1.20 source code from Sourceforge
-wget -N https://sourceforge.net/projects/fldigi/files/fldigi/fldigi-4.1.20.tar.gz ||
+#Download the fldigi-4.1.23 source code from Sourceforge
+wget -N https://sourceforge.net/projects/fldigi/files/fldigi/fldigi-4.1.23.tar.gz ||
   { echo 'Unable to download the fldigi source code file'; exit 1; }
 
 #Extract the fldigi source code files
-tar -xvzf fldigi-4.1.20.tar.gz ||
+tar -xvzf fldigi-4.1.23.tar.gz ||
   { echo 'Unable to extract fldigi'; exit 1; }
   
 #Change the directory containing the uncompressed fldigi source code to the current directory
-cd ~/src/FLDIGI/fldigi-4.1.20
+cd ~/src/FLDIGI/fldigi-4.1.23
 
 #Configure the Makefile for the fldigi compile
 ./configure
@@ -68,16 +68,16 @@ make -j3 && sudo make install ||
 #Change the unique directory previously created for the compile to the current directory 
 cd ~/src/FLDIGI
 
-#Download the flrig 1.4.4 source code from Sourceforge
-wget -N https://sourceforge.net/projects/fldigi/files/flrig/flrig-1.4.4.tar.gz ||
+#Download the flrig 1.4.5 source code from Sourceforge
+wget -N https://sourceforge.net/projects/fldigi/files/flrig/flrig-1.4.5.tar.gz ||
   { echo 'Unable to download the flrig source code file'; exit 1; }
 
 #Extract the flrig source code files
-tar -xvzf flrig-1.4.4.tar.gz ||
+tar -xvzf flrig-1.4.5.tar.gz ||
   { echo 'Unable to extract flrig'; exit 1; }
   
 #Change the directory containing the uncompressed flrig source code to the current directory
-cd ~/src/FLDIGI/flrig-1.4.4
+cd ~/src/FLDIGI/flrig-1.4.5
 
 #Configure the Makefile for the flrig compile
 ./configure
