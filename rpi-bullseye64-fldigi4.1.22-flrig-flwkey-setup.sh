@@ -1,6 +1,6 @@
 #!/bin/sh
-#install fldigi(4.1.22) w/Hamlib(4.4) flrig(1.4.5) flwkey(1.2.3) 
-#N4XWE 5-10-2022
+#install fldigi(4.1.23) w/Hamlib(4.4) flrig(1.4.5) flwkey(1.2.3) 
+#N4XWE 7-13-2022
 #Compiled on RaspiOS-bullseye dtd 2022-04-04 64-bit
 
 
@@ -47,16 +47,16 @@ sudo apt -y install portaudio19-dev ||
 #Change the unique directory previously created for the compile to the current directory 
 cd ~/src/FLDIGI
 
-#Download the fldigi-4.1.22 source code from Sourceforge
-wget https://sourceforge.net/projects/fldigi/files/fldigi/fldigi-4.1.22.tar.gz ||
+#Download the fldigi-4.1.23 source code from Sourceforge
+wget https://sourceforge.net/projects/fldigi/files/fldigi/fldigi-4.1.23.tar.gz ||
   { echo 'Unable to download the fldigi source code file'; exit 1; }
 
 #Extract the fldigi source code files
-tar -xvzf fldigi-4.1.22.tar.gz ||
+tar -xvzf fldigi-4.1.23.tar.gz ||
   { echo 'Unable to extract fldigi'; exit 1; }
   
 #Change the directory containing the uncompressed fldigi source code to the current directory
-cd ~/src/FLDIGI/fldigi-4.1.22
+cd ~/src/FLDIGI/fldigi-4.1.23
 
 #Configure the Makefile for the fldigi compile
 ./configure
