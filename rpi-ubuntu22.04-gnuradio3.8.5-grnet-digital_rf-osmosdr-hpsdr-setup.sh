@@ -1,6 +1,6 @@
 #!/bin/sh
 #install GNU Radio(3.8.5.0) w/gr-net w/digital_rf w/Osmocom w/HPSDR
-#N4XWE 7-21-2022
+#N4XWE 7-23-2022
 #Test Compiled on Ubuntu 22.04LTS for the Raspberry Pi 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
@@ -173,7 +173,7 @@ make -j 3 && sudo make install ||
 sudo ldconfig
 
 #Make the GNU Radio Library and Python Path statements permanent
-echo "export PYTHONPATH=/usr/local/lib/python3/dist-packages:/usr/local/lib/python3.8/dist-packages" >> ~/.profile
+echo "export PYTHONPATH=/usr/local/lib/python3/dist-packages:/usr/local/lib/python3.10/dist-packages" >> ~/.profile
 echo "export LD_LIBRARY_PATH=/usr/local/lib" >> ~/.profile
 
 #Install a Gnuradio Companion icon on the desktop
