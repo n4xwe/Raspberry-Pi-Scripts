@@ -15,7 +15,7 @@ tcl8.6-dev libspeex-dev libasound2-dev libgd-dev alsa-utils libgcrypt20-dev libp
 libsdl1.2-dev libgsl-dev libqwt-qt5-dev libqt5opengl5-dev python3-pyqt5 liblog4cpp5-dev libzmq3-dev python3-yaml \
 python3-click python3-click-plugins portaudio19-dev libpulse-dev libportaudiocpp0 libblas-dev liblapack-dev \
 libflxmlrpc-dev ||
-	{ echo 'Dependency installation failed'; exit 1;}
+	{ echo 'Dependency installation failed'; exit 1; }
   
 #Create a unique directory for the FLDIGI compile and make it the current directory
 mkdir -p ~/src/FLDIGI && cd ~/src/FLDIGI
