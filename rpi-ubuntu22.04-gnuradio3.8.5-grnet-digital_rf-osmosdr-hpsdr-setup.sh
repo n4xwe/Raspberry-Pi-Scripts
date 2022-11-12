@@ -14,8 +14,8 @@ liblog4cpp5-dev libzmq3-dev python3-yaml python3-click python3-click-plugins \
 python3-zmq python3-scipy libpthread-stubs0-dev libusb-1.0-0 libusb-1.0-0-dev \
 libudev-dev python3-setuptools build-essential liborc-0.4-0 liborc-0.4-dev \
 libcairo2-dev python3-gi-cairo python3-pygccxml libgmp3-dev zlib1g-dev libpcap-dev \
-pybind11-dev python3-pybind11 libosmesa6 tk8.6 dvipng inkscape ipython3 \
-python3-cairocffi python3-nose python3-tornado texlive-extra-utils \
+pybind11-dev python3-pybind11 libosmesa6 tk8.6 dvipng inkscape ipython3 librtlsdr0 \
+python3-cairocffi python3-nose python3-tornado texlive-extra-utils librtlsdr-dev \
 texlive-latex-extra ttf-staypuft python3-gdal python3-pydot python3-pygraphviz \
 libgle3 tix python3-tk-dbg libboost-tools-dev libhdf5-dev python3-pkgconfig \
 python3-dev python3-dateutil python3-tz python3-six python3-pandas python3-watchdog ||
