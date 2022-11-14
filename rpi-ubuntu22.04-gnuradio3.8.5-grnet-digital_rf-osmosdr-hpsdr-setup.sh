@@ -1,7 +1,7 @@
 #!/bin/sh
 #install GNU Radio(3.8.5.0) w/gr-net w/digital_rf w/Osmocom w/HPSDR
-#N4XWE 7-23-2022
-#Test Compiled on Ubuntu MATE 22.04LTS for the Raspberry Pi 64-bit
+#N4XWE 11-14-2022
+#Test Compiled on Ubuntu 22.04LTS for the Raspberry Pi 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt update && sudo apt upgrade -y
