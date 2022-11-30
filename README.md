@@ -11,11 +11,11 @@ Most of the scripts have detailed inline comments that explain the function of e
 
 PiHPSDR, by John Melton, G0ORX, is an excellent lightweight SDR Console that works with a variety of radios.  It uses the WDSP 1.18 library for signal processing, has the capability of implementing Puresignal adaptive pre-distortion, has an intuitive interface and is very stable. PiHPSDR interfaces with other programs through the Pulseaudio transport system.  There is a version of the script that supports the Rasbian OS and one that supports the Raspberry Pi flavor of Ubuntu Mate. The current release of PiHPSDR is 2.08-rc1. Script runtime time on a Raspberry Pi 4 is approximately 10 minutes.
 
-GNU Radio, originally developed by Eric Blossom, K7GNU, and Matt Ettus, N2MJI, is a powerful DSP toolkit. It has a graphical interface that allows allows almost any DSP function to be performed on RF derived signals.  Script runtime on a Raspberry Pi 4 is roughly 2 hours and 30 minutes.  The rpi-mate-gnuradio3.8.2-grnet-digital_rf-osmosdr-hpsdr-setup.sh script was built for the HamSCI Tangerine-SDR project and works only on Ubuntu Mate 20.10 for the Raspberry Pi.  It installs GNU Radio 3.8.2 and builds the gr-grnet, gr-digital_rf, (limited) gr-osmosdr and gr-hpsdr blocks into the GNU Radio Companion. The rpi-gnuradio3.8.4-hpsdr script builds the 3.8.4 (latest as of 10/1/21) version of GNU Radio with the HPSDR source blocks. 
+GNU Radio, originally developed by Eric Blossom, K7GNU, and Matt Ettus, N2MJI, is a powerful DSP toolkit. It has a graphical interface that allows allows almost any DSP function to be performed on RF derived signals.  Script runtime on a Raspberry Pi 4 is roughly 2 hours and 30 minutes.  The rpi-Ubuntu22.04MATE-gnuradio3.8.5-grnet-digital_rf-osmosdr-hpsdr-setup.sh script was built for the HamSCI Tangerine-SDR project and works only on Ubuntu MATE 22.04 64-bit for the Raspberry Pi.  It installs GNU Radio 3.8.5 and builds the gr-grnet, gr-digital_rf, (limited) gr-osmosdr and gr-hpsdr blocks into the GNU Radio Companion. The script also builds the HPSDR and some of the RTL-SDR source blocks. 
 
 WSJT-X by Joe Taylor, K1JT, and currently supported by a group of very talented developers is weak signal software that includes, among other programs, FT8, FT4, JT8 and WSPR. The script also compiles the most recent version of the Hamlib library for integrated rig control,  Script runtime on a Raspberry Pi 4 is 35 minutes.
 
-Fldigi by Dave Freese, W1HKJ and others is a digital mode console with integrated Hamlib rig control.  This console handles a multitude of digital modes including PSK-31, WeatherFax, Hellschreiber and CW.  The script installs Hamlib 4.4, fldigi 4.1.20, rigctl 1.4 and flwkeyer 1.2.3. Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
+Fldigi by Dave Freese, W1HKJ and others is a digital mode console with integrated Hamlib rig control.  This console handles a multitude of digital modes including PSK-31, WeatherFax, Hellschreiber and CW.  The script installs Hamlib 4.4, fldigi 4.1.20, rigctl 1.7 and flwkeyer 1.2.3. Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
 
 FreeDV, by David Witten, KDØEAG, and David Rowe, VK5DGR, is a GUI client for Digital Voice. This script incorporates Codec2 and the LPCNet, neural network software. Script runtime on a Raspberry Pi 4 is approximately 10 minutes.
 
@@ -23,4 +23,4 @@ Dream is an AM/DRM software receiver written in C++ and Qt. Script runtime on a 
 
 tweaktime, by Matt Roberts, KK5JY allows adjusting the system clock to provide accurate time synchronization for WSJT-X using the DT values in the WSJT-X GUI. Please take a look at kk5jy.net to find the instructions for using it.
 
-qsstv is a digital or analog Slow Scan Television program with integrated Hamlib rig control. Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
+
