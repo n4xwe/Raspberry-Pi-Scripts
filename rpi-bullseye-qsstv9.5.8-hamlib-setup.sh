@@ -1,7 +1,7 @@
 #!/bin/sh
-#install QSSTV(9.5.8) w/HamLib(4.4)
-#N4XWE 02-22-2022
-#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit
+#install QSSTV(9.5) w/HamLib(4.5)
+#N4XWE 12-02-2022
+#Test Compiled on RaspiOS-bullseye dtd 2022-09-06 64-bit
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
@@ -9,21 +9,21 @@ sudo apt update && sudo apt -y upgrade
 
 #Add all of the dependencies
 sudo apt -y install pkg-config g++ libfftw3-dev libpulse-dev libasound2-dev libv4l-dev \
-libopenjp2-7 libopenjp2-7-dev ||
+libopenjp2-7 libopenjp2-7-dev doxygen libqwt-qt5-dev ||
 	{ echo 'Dependency installation failed'; exit 1;}
 
 #Create a unique directory for the QSSTV compile and make it the current directory
 mkdir -p ~/src/QSSTV && cd ~/src/QSSTV
 
-#Download the Hamlib 4.4 source code from Sourceforge
-wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.4/hamlib-4.4.tar.gz ||
+#Download the Hamlib 4.5 source code from Sourceforge
+wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.5/hamlib-4.5.tar.gz ||
   { echo 'Unable to download the Hamlib source code file'; exit 1; }
   
 #Extract the Hamlib source code files
-tar -xvzf hamlib-4.4.tar.gz
+tar -xvzf hamlib-4.5.tar.gz
 
 #Change the directory containing the uncompressed HamLib source code to the current directory
-cd ~/src/QSSTV/hamlib-4.4
+cd ~/src/QSSTV/hamlib-4.5
 
 #Configure the Makefile for the Hamlib compile
 ./configure --prefix=/usr/local --enable-static
@@ -38,18 +38,18 @@ sudo ldconfig
 #Change the unique directory previously created for the compile to the current directory 
 cd ~/src/QSSTV
 
-#Download the QQSTV source code from Telenet
-wget -N http://users.telenet.be/on4qz/qsstv/downloads/qsstv_9.5.8.tar.gz  ||
+#Download the QSSTV source code from Github
+git clone  https://github.com/gnuradio/gnuradio.git ||
   { echo 'Unable to download the QSSTV source code'; exit 1; }
   
-#Extract the QSSTV source code
-tar -xvzf qsstv_9.5.8.tar.gz
-
 #Change the directory containing the uncompressed QSSTV source code to the current directory
-cd ~/src/QSSTV/qsstv
+cd ~/src/QSSTV/QSSTV/src
+
+#Make an indirect build directory and change it to the current directory
+mkdir build && cd build
 
 #Configure the Makefile for the QSSTV compile
-qmake
+qmake ..
 
 #Compile and install QSSTV
 make -j3 && sudo make install ||
