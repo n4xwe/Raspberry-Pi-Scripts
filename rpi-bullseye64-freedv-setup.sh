@@ -1,11 +1,10 @@
 #!/bin/sh
-#install freedv (1.7.0) w/codec2 w/LPCNet 
-#N4XWE 05-24-2022
-#Compiled on RaspiOS-bullseye dtd 2022-04 64-bit
+#Install freedv(1.8.4) w/codec2 w/LPCNet 
+#N4XWE 11-28-2022
+#Compiled on RaspiOS-bullseye dtd 2022-09-06 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt -y update && sudo apt -y upgrade
-
 
 #Download and install the required build dependencies
 sudo apt -y install cmake subversion libwxgtk3.0-gtk3-dev portaudio19-dev libportaudiocpp0 \
@@ -14,7 +13,7 @@ libsndfile1-dev libjpeg-dev libxft-dev libxinerama-dev libxcursor-dev libspeex-d
 libspeexdsp-dev libreadline-dev libhamlib-dev ||
 	{ echo 'Dependency download failed'; exit 1;}
 
-#Create a 2GB swapfile (For Memory<4GB uncoment to make a 2GB swapfile)
+#Create a 2GB swapfile (For an RPi with memory<4GB uncomment to make a 2GB swapfile)
 #sudo fallocate -l 2G /swapfile
 #sudo chmod 600 /swapfile
 #sudo mkswap /swapfile
@@ -96,7 +95,7 @@ cmake -DCMAKE_BUILD_TYPE=Debug -DUSE_PULSEAUDIO=1 -DCODEC2_BUILD_DIR=~/src/FreeD
 make && sudo make install ||
   { echo 'Unable to compile and install freedv-gui'; exit 1; }
 
-#Add the currentuser to the dialout user group
+#Add the current user to the dialout user group
 sudo usermod -a -G dialout $USER
 
 #Add a FreeDV icon to the Desktop
