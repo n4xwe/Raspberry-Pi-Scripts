@@ -1,5 +1,5 @@
 #!/bin/sh
-#install QSSTV(9.5) w/HamLib(4.5)
+#install QSSTV(9.5.11) w/HamLib(4.5)
 #N4XWE 12-02-2022
 #Test Compiled on RaspiOS-bullseye dtd 2022-09-06 64-bit
 
