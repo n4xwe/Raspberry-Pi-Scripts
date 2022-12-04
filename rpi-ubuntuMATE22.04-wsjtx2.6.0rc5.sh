@@ -1,6 +1,6 @@
 #!/bin/sh
 #install wsjt-x(2.6.0rc5) Hamlib(4.5)
-#N4XWE 12-3-2022
+#N4XWE 12-4-2022
 #Test Compiled on Ubuntu MATE 22.04 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
