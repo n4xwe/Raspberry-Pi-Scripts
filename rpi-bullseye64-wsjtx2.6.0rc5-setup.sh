@@ -1,6 +1,6 @@
 #!/bin/sh
-#install wsjt-x(2.6.0-rc4) Hamlib(4.5)
-#N4XWE 12-03-2022
+#install wsjt-x(2.6.0-rc5) Hamlib(4.5)
+#N4XWE 12-04-2022
 #Test Compiled on RaspiOS-bullseye dtd 2022-09-22 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
@@ -25,35 +25,13 @@ libudev-dev qtmultimedia5-dev texinfo xsltproc qttools5-dev \
 qttools5-dev-tools qtbase5-dev-tools ||
 	{ echo 'Dependency installation failed'; exit 1; }
 
-#Create a unique directory for the WSJT-X compile and make it the current directory
-mkdir -p ~/src/WSJTX && cd ~/src/WSJTX
-
-#Download the Hamlib 4.5 source code from Sourceforge
-wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.5/hamlib-4.5.tar.gz ||
-  { echo 'Unable to download the HamLib source code file'; exit 1; }
-  
-#Extract the Hamlib source code files
-tar -xvzf hamlib-4.5.tar.gz
-
-#Make the directory containing the uncompressed Hamlib source code the current directory
-cd ~/src/WSJTX/hamlib-4.5
-
-#Configure the Makefile for the Hamlib compile
-./configure --prefix=/usr/local --enable-static
-
-#Compile and install the Hamlib libraries
-make -j3 && sudo make install ||
-  { echo 'Unable to install the HamLib Libraries'; exit 1; }
-
-#Link the Hamlib library files
-sudo ldconfig
 
 #Set the Raspberry Pi CPU optimization Flags for compiling the WSJT-X source code
 export CXXFLAGS='-O2 -march=native -mtune=native'
 export CFLAGS='-O2 -march=native -mtune=native'
 
-#Make the unique directory previously created for the compile the current directory 
-cd ~/src/WSJTX
+#Create a unique directory for the WSJT-X compile and make it the current directory
+mkdir -p ~/src/WSJTX && cd ~/src/WSJTX
 
 #Download the WSJT-X source code from Sourceforge
 wget -N https://sourceforge.net/projects/wsjt/files/wsjtx-2.6.0-rc5/wsjtx-2.6.0-rc5.tgz ||
