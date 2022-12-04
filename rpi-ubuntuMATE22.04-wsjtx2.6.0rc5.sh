@@ -25,12 +25,13 @@ libudev-dev qtmultimedia5-dev texinfo xsltproc qttools5-dev \
 qttools5-dev-tools qtbase5-dev-tools ||
 	{ echo 'Dependency installation failed'; exit 1; }
 
-#Create a unique directory for the WSJT-X compile and make it the current directory
-mkdir -p ~/src/WSJTX && cd ~/src/WSJTX
 
 #Set the Raspberry Pi CPU optimization Flags for compiling the WSJT-X source code
 export CXXFLAGS='-O2 -march=native -mtune=native'
 export CFLAGS='-O2 -march=native -mtune=native'
+
+#Create a unique directory for the WSJT-X compile and make it the current directory
+mkdir -p ~/src/WSJTX && cd ~/src/WSJTX
 
 #Download the WSJT-X source code from Sourceforge
 wget -N https://sourceforge.net/projects/wsjt/files/wsjtx-2.6.0-rc5/wsjtx-2.6.0-rc5.tgz ||
