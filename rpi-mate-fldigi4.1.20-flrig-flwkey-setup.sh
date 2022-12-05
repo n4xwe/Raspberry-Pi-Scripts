@@ -1,6 +1,6 @@
-#!/bin/sh
-#install fldigi(4.1.20) w/Hamlib(4.4) flrig(1.4.5) flwkey(1.2.3) 
-#N4XWE 3-24-2022
+#!/bin/s3
+#install fldigi(4.1.20) w/Hamlib(4.5) flrig(1.4.7) flwkey(1.2.3) 
+#N4XWE 12-05-2022
 #Tested on Ubuntu MATE 20.04LTS 64-bit
 
 
@@ -27,15 +27,15 @@ sudo apt remove libhamlib2 -y
 #Create a unique directory for the FLDIGI compile and make it the current directory
 mkdir -p ~/src/FLDIGI && cd ~/src/FLDIGI
 
-#Download the Hamlib 4.4 source code from Sourceforge
-wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.4/hamlib-4.4.tar.gz ||
+#Download the Hamlib 4.5 source code from Sourceforge
+wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.5/hamlib-4.5.tar.gz ||
   { echo 'Unable to download the HamLib source code file'; exit 1; }
   
 #Extract the Hamlib source code files
-tar -xvzf hamlib-4.4.tar.gz
+tar -xvzf hamlib-4.5.tar.gz
 
 #Make the directory containing the uncompressed Hamlib source code the current directory
-cd ~/src/FLDIGI/hamlib-4.4
+cd ~/src/FLDIGI/hamlib-4.5
 
 #Configure the Makefile for the Hamlib compile
 ./configure --prefix=/usr/local --enable-static
@@ -54,16 +54,16 @@ sudo apt -y install portaudio19-dev ||
 #Change the unique directory previously created for the compile to the current directory 
 cd ~/src/FLDIGI
 
-#Download the fldigi-4.1.20 source code from Sourceforge
-wget -N https://sourceforge.net/projects/fldigi/files/fldigi/fldigi-4.1.20.tar.gz ||
+#Download the fldigi-4.1.23 source code from Sourceforge
+wget -N https://sourceforge.net/projects/fldigi/files/fldigi/fldigi-4.1.23.tar.gz ||
   { echo 'Unable to download the fldigi source code file'; exit 1; }
 
 #Extract the fldigi source code files
-tar -xvzf fldigi-4.1.20.tar.gz ||
+tar -xvzf fldigi-4.1.23.tar.gz ||
   { echo 'Unable to extract fldigi'; exit 1; }
   
 #Change the directory containing the uncompressed fldigi source code to the current directory
-cd ~/src/FLDIGI/fldigi-4.1.20
+cd ~/src/FLDIGI/fldigi-4.1.23
 
 #Configure the Makefile for the fldigi compile
 ./configure
@@ -75,16 +75,16 @@ make -j3 && sudo make install ||
 #Change the unique directory previously created for the compile to the current directory 
 cd ~/src/FLDIGI
 
-#Download the flrig 1.4.5 source code from Sourceforge
-wget -N https://sourceforge.net/projects/fldigi/files/flrig/flrig-1.4.5.tar.gz ||
+#Download the flrig 1.4.7 source code from Sourceforge
+wget -N https://sourceforge.net/projects/fldigi/files/flrig/flrig-1.4.7.tar.gz ||
   { echo 'Unable to download the flrig source code file'; exit 1; }
 
 #Extract the flrig source code files
-tar -xvzf flrig-1.4.5.tar.gz ||
+tar -xvzf flrig-1.4.7.tar.gz ||
   { echo 'Unable to extract flrig'; exit 1; }
   
 #Change the directory containing the uncompressed flrig source code to the current directory
-cd ~/src/FLDIGI/flrig-1.4.5
+cd ~/src/FLDIGI/flrig-1.4.7
 
 #Configure the Makefile for the flrig compile
 ./configure
