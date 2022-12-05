@@ -38,7 +38,7 @@ tar -xvzf hamlib-4.5.tar.gz
 cd ~/src/FLDIGI/hamlib-4.5
 
 #Configure the Makefile for the Hamlib compile
-./configure --prefix=/usr/local --enable-static
+./configure --prefix=/usr/local --enable-static CXXFLAGS=-std=c++11
 
 #Compile and install the Hamlib libraries
 make -j 3 && sudo make install ||
