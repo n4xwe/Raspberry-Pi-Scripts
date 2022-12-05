@@ -1,5 +1,5 @@
-#!/bin/s3
-#install fldigi(4.1.20) w/Hamlib(4.5) flrig(1.4.7) flwkey(1.2.3) 
+#!/bin/sh
+#install fldigi(4.1.23) w/Hamlib(4.5) flrig(1.4.7) flwkey(1.2.3) 
 #N4XWE 12-05-2022
 #Tested on Ubuntu MATE 20.04LTS 64-bit
 
