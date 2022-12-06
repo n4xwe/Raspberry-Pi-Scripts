@@ -28,13 +28,10 @@ sudo apt remove libhamlib2 -y
 mkdir -p ~/src/FLDIGI && cd ~/src/FLDIGI
 
 #Download the Hamlib 4.5 source code from Sourceforge
-wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.5/hamlib-4.5.tar.gz ||
+git clone https://git.code.sf.net/p/hamlib/code hamlib ||
   { echo 'Unable to download the HamLib source code file'; exit 1; }
   
-#Extract the Hamlib source code files
-tar -xvzf hamlib-4.5.tar.gz
-
-#Make the directory containing the uncompressed Hamlib source code the current directory
+#Change the directory containing the uncompressed Hamlib source code the current directory
 cd ~/src/FLDIGI/hamlib-4.5
 
 #Configure the Makefile for the Hamlib compile
