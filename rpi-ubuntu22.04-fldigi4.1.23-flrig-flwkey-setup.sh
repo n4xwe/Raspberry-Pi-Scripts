@@ -34,11 +34,11 @@ git clone https://git.code.sf.net/p/hamlib/code hamlib ||
 #Change the directory containing the uncompressed Hamlib source code the current directory
 cd ~/src/FLDIGI/hamlib
 
-#Convert the github 
+#Reconfigure the git files with the bootstrap script
 ./bootstrap
 
 #Configure the Makefile for the Hamlib compile
-./configure --prefix=/usr/local --enable-static CXXFLAGS=-std=c++11
+./configure --prefix=/usr/local --enable-static
 
 #Compile and install the Hamlib libraries
 make -j 3 && sudo make install ||
