@@ -34,6 +34,7 @@ git clone https://git.code.sf.net/p/hamlib/code hamlib ||
 #Change the directory containing the uncompressed Hamlib source code the current directory
 cd ~/src/FLDIGI/hamlib
 
+#Convert the github 
 ./bootstrap
 
 #Configure the Makefile for the Hamlib compile
