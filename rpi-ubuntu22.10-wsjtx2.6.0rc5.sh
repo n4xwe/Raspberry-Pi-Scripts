@@ -1,5 +1,5 @@
 #!/bin/sh5-git)
-#WSJT-X 2.6.0rc5 w/HamLib(4.6-git)
+#WSJT-X 2.6.0-rc5 w/HamLib(4.6-git)
 #N4XWE 12-09-2022
 #Test compiled on Ubuntu 22.10 64-bit
 
