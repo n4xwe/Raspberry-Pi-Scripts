@@ -1,6 +1,8 @@
 #!/bin/sh5-git)
-#N4XWE 12-04-2022
-#Test Compiled on Ubuntu MATE 22.04 64-bit
+#WSJT-X 2.6.0rc5 w/HamLib(4.6-git)
+#N4XWE 12-09-2022
+#Test compiled on Ubuntu 22.10 64-bit
+
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt update && sudo apt upgrade -y
