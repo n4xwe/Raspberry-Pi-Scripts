@@ -1,8 +1,7 @@
 #!/bin/sh
 #install tweaktime 
-#N4XWE 04-10-2022
-#Compiled on RaspiOS-bullseye dtd 2021-10-30 32-bit and RaspiOS-bullseye dtd 2022-1-28 32-bit
-
+#N4XWE 12-09-2022
+#Test compiled on Ubuntu 22.10 64-bit
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
