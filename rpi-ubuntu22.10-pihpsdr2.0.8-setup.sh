@@ -1,7 +1,7 @@
 #!/bin/sh
 #install PiHPSDR(2.0.8-rc1) with wdsp(1.18)
-#N4XWE 11-29-2022
-#Test Compiled on Ubuntu 22.04 MATE64-bit
+#N4XWE 12-09-2022
+#Test compiled on Ubuntu 22.10 64-bit
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
