@@ -1,7 +1,7 @@
 #!/bin/sh
 #install fldigi(4.1.23) w/Hamlib(4.5) flrig(1.4.7) flwkey(1.2.3) 
-#N4XWE 12-05-2022
-#Test compiled on Ubuntu 22.04LTS 64-bit
+#N4XWE 12-09-2022
+#Test compiled on Ubuntu 22.10 64-bit
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
