@@ -1,7 +1,7 @@
 #!/bin/sh
 #Install freedv(1.8.5) w/codec2 w/LPCNet 
 #N4XWE 12-18-2022
-#Test Compiled on Ubuntu 22.10 64-bit for the Raspberry Pi
+##Test compiled on Ubuntu 22.10 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt -y update && sudo apt -y upgrade
