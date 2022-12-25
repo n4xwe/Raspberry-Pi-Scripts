@@ -17,9 +17,9 @@ WSJT-X by Joe Taylor, K1JT, and currently supported by a group of very talented 
 
 Fldigi by Dave Freese, W1HKJ and others is a digital mode console with integrated Hamlib rig control.  This console handles a multitude of digital modes including PSK-31, WeatherFax, Hellschreiber and CW.  The script installs Hamlib 4.5, fldigi 4.1.25, rigctl 1.7 and flwkeyer 1.2.3. Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
 
-FreeDV, by David Witten, KDØEAG, and David Rowe, VK5DGR, is a GUI client for Digital Voice. This script incorporates Codec2 and the LPCNet, neural network software. Script compile runtime on a Raspberry Pi 4 is approximately 10 minutes.
+FreeDV, by David Witten, KDØEAG, and David Rowe, VK5DGR and ably maintained by Mooneer Salam, K6AQ, is a GUI client for Digital Voice. This script incorporates Codec2 and LPCNet neural network software. Script compile runtime on a Raspberry Pi 4 is approximately 10 minutes.
 
-Dream is an AM/DRM software receiver written in C++ and Qt. Script runtime on a Raspberry Pi 4 is approximately 20 minutes.  The script for installing is currently a Work in Progress
+Dream is an AM/DRM software receiver written in C++ and Qt. Script runtime on a Raspberry Pi 4 is approximately 20 minutes.  The script for compiling Dream is currently a Work in Progress
 
 tweaktime, by Matt Roberts, KK5JY allows adjusting the system clock to provide accurate time synchronization for WSJT-X using the DT values in the WSJT-X GUI. Please take a look at the kk5jy.net webpage to find the instructions for using it.
 
