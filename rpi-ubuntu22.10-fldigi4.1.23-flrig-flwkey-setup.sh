@@ -19,6 +19,12 @@ libfile-stripnondeterminism-perl libfltk-cairo1.3 libfltk-forms1.3 libfltk-gl1.3
 libfltk1.3-dev libflxmlrpc-dev libflxmlrpc1 libmbedcrypto7 libmbedtls-dev libmbedtls14 \
 libmbedx509-1 libsub-override-perl po-debconf libudev-dev ||
 	{ echo 'Dependency installation failed'; exit 1;}
+
+#If your RPi has less than 4GB of memory remove the pound signs in the following statements in order to add and enable a 2GB Swapfile
+#sudo fallocate -l 2G /swapfile
+#sudo chmod 600 /swapfile
+#sudo mkswap /swapfile
+#sudo swapon /swapfile
 	
 #Check to see if a previous version of Hamlib has been installed
 #If the answer is yes, remove the libhamlib2 file 
