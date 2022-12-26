@@ -33,7 +33,7 @@ sudo apt remove libhamlib2 -y
 #Create a unique directory for the FLDIGI compile and make it the current directory
 mkdir -p ~/src/FLDIGI && cd ~/src/FLDIGI
 
-#Download the Hamlib 4.6-gi5 source code from Sourceforge
+#Download the Hamlib 4.6-git source code from Sourceforge
 git clone https://git.code.sf.net/p/hamlib/code hamlib ||
   { echo 'Unable to download the HamLib source code file'; exit 1; }
   
