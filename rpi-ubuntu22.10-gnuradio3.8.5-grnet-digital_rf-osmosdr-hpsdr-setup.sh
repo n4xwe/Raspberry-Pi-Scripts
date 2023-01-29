@@ -1,6 +1,6 @@
 #!/bin/sh
 #install GNU Radio(3.8.5.0) w/gr-net w/digital_rf w/Osmocom w/HPSDR
-#N4XWE 12-09-2022
+#N4XWE 1-29-2023
 #Test compiled on Ubuntu 22.10 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
