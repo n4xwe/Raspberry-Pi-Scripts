@@ -20,9 +20,9 @@ texlive-latex-extra ttf-staypuft python3-gdal python3-pydot python3-pygraphviz \
 libgle3 tix python3-tk-dbg libboost-tools-dev libhdf5-dev python3-pkgconfig \
 python3-dev python3-dateutil python3-tz python3-six python3-pandas python3-watchdog ||
 	{ echo 'Dependency installation failed'; exit 1;}
-	
-#If your RPi has less than 4GB of RAM add and enable a 2GB Swapfile
-#sudo fallocate -l 2G /swapfile
+
+#If your RPi has less than 8GB of RAM add and enable a 3GB Swapfile (by removing the # sign from the following 4 lines)
+#sudo fallocate -l 3G /swapfile
 #sudo chmod 600 /swapfile
 #sudo mkswap /swapfile
 #sudo swapon /swapfile
