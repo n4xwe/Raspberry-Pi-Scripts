@@ -1,7 +1,7 @@
 # RPi-Scripts
 BASH Scripts that Install Ham Radio Software on the Raspberry Pi
 
-These BASH scripts install either GNU Radio, WSJT-X, PiHPSDR, Fldigi, FreeDV, tweaktime or QSSTV on a Raspberry Pi using the Bullseye 64-bit version of Raspberry Pi (fomerly Raspbian) Operating System or the Ubuntu 22.04 LTS Operating System with the MATE desktop.. The scripts titled rpi-Bullseye64(name of the package) have been tested on an 8GB RPi 4 running the September 22, 2022, release of the Raspberry Pi OS 64-bit version. The scripts titled rpi-ubuntuMATE22.04-(name of the package) have been tested on an 8GB RPi 4 running the of Ubuntu 22.04 ARM 64-bit version. They may or may not work successfully on other models of the Raspberry Pi or other versions of the Raspberry Pi OS or Ubuntu MATE Operating Systems.  
+These BASH scripts install either GNU Radio, WSJT-X, PiHPSDR, Fldigi, FreeDV, tweaktime, QSSTV or NanoVNA-Saver on a Raspberry Pi using the Bullseye 64-bit version of Raspberry Pi (fomerly Raspbian) Operating System or the Ubuntu 22.04 LTS Operating System with the MATE desktop.. The scripts titled rpi-Bullseye64(name of the package) have been tested on an 8GB RPi 4 running the September 22, 2022, release of the Raspberry Pi OS 64-bit version. The scripts titled rpi-ubuntuMATE22.04-(name of the package) have been tested on an 8GB RPi 4 running the of Ubuntu 22.04 ARM 64-bit version. They may or may not work successfully on other models of the Raspberry Pi or other versions of the Raspberry Pi OS or Ubuntu MATE Operating Systems.  
 
 In order for the script to function correctly you must have a reasonable connection to the Internet.  The suggested method of launching the scripts is to create a separate directory named src off of the $HOME directory (/home/$USER/src).  Copy the script file to the src directory.  Using the Command Line change the file permissions of the script to allow its execution (chmod +x name-of-the script.sh).  The same result can be achieved on the Bullseye Desktop by doing a right click on your script and choosing Properties from the pop-up menu, then switch to the Permissions tab, opposite "Execute" change Nobody to Anyone.  To start the script from the Command Line preface the script name with a dot slash (./name-of-the-script.sh) and press the Enter key.  From the  Ubuntu MATE desktop do a right click on your script and choose Properties from the pop-up menu, then click-on the Permissions tab,check the box "Allow executing file as a program."
 
@@ -17,12 +17,13 @@ WSJT-X by Joe Taylor, K1JT, and currently supported by a group of very talented 
 
 Fldigi by Dave Freese, W1HKJ and others is a digital mode console with integrated Hamlib rig control.  This console handles a multitude of digital modes including PSK-31, WeatherFax, Hellschreiber and CW.  The script installs Hamlib 4.5, fldigi 4.1.25, rigctl 1.7 and flwkeyer 1.2.3. Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
 
-FreeDV, by David Witten, KDØEAG, and David Rowe, VK5DGR and ably maintained by Mooneer Salem, K6AQ, is a GUI client for Digital Voice. This script incorporates Codec2 and LPCNet neural network software. Script compile runtime on a Raspberry Pi 4 is approximately 10 minutes.
+FreeDV, by David Witten, KDØEAG, and David Rowe, VK5DGR and ably maintained by Mooneer Salem, K6AQ, is a GUI client for Digital Voice. This script incorporates Codec2 and LPCNet neural network software. Because of limitations in the Raspberrry Pi CPU the Digital Voice 2020 mode is not supported.  The script runtime on a Raspberry Pi 4 is approximately 10 minutes.
 
 Dream is an AM/DRM software receiver written in C++ and Qt. Script runtime on a Raspberry Pi 4 is approximately 20 minutes.  The script for compiling Dream is currently a Work in Progress
 
 tweaktime, by Matt Roberts, KK5JY allows adjusting the system clock to provide accurate time synchronization for WSJT-X using the DT values in the WSJT-X GUI. Please take a look at the kk5jy.net webpage to find the instructions for using it.
 
-QSSTV, by Johan Maes, ON4QZ, is an SSTV and file transfer program. It has a simple interface and is easy to use.  All around an excellent piece of software that is compatible with EasyPal and MMSSTV. The CAT function does not work in all Operating Systems. Script runtime time on a Raspberry Pi 4 is approximately 20 minutes.
+QSSTV, by Johan Maes, ON4QZ, is an SSTV and file transfer program. It has a simple interface and is easy to use.  All around an excellent piece of software that is compatible with EasyPal and MMSSTV. The CAT function does not work in all Operating Systems. Script runtime time on a Raspberry Pi 4 is approximately 20 minutes.ware 
 
+NanoVNA Saver is a software package that adds functionality, mainly hard copy graphing capability, to most versions of the NanoVNA hardware.
 
