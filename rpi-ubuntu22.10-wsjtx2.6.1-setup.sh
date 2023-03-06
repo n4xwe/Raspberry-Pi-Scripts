@@ -1,6 +1,6 @@
 #!/bin/sh
 #WSJT-X 2.6.1 w/HamLib(4.6-git)
-#N4XWE 1-19-2022
+#N4XWE 1-19-2023
 #Test compiled on Ubuntu 22.10 64-bit
 
 
