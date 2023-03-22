@@ -75,7 +75,7 @@ make -j3 && sudo make install ||
 cd ~/src/FLDIGI
 
 #Download the flrig 1.4.8 source code from Sourceforge
-wget https://sourceforge.net/projects/fldigi/files/flrig/flrig-1.4.7.tar.gz ||
+wget https://sourceforge.net/projects/fldigi/files/flrig/flrig-1.4.8.tar.gz ||
   { echo 'Unable to download the flrig source code file'; exit 1; }
 
 #Extract the flrig source code files
