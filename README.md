@@ -25,5 +25,7 @@ tweaktime, by Matt Roberts, KK5JY allows adjusting the system clock to provide a
 
 QSSTV, by Johan Maes, ON4QZ, is an SSTV and file transfer program. It has a simple interface and is easy to use.  All around an excellent piece of software that is compatible with EasyPal and MMSSTV. The CAT function does not work in all Operating Systems. Script runtime time on a Raspberry Pi 4 is approximately 20 minutes.ware 
 
-NanoVNA Saver is a software package that adds functionality, mainly hard copy graphing capability, to most versions of the NanoVNA hardware. It is currently not compiling correctly because of an inability to install PyQT6 on the the February 22, 2023 version of the Raspberry Pi OS.  This is due to a Python3 version issue (what else?) that will hopefully be corrected in short order.
+NanoVNA Saver is a software package that adds functionality, mainly hard copy graphing capability, to most versions of the NanoVNA hardware. It is currently not compiling correctly because of an inability to install PyQT6 on the the February 22, 2023 version of the Raspberry Pi OS.  This is due to a Python3 version hell issue (what else?) that will hopefully be corrected in short order.
+
+An interesting sidebar...  I have recently upgraded my Pi4 with the addition of a Samsung 980 NVME drive mounted in an Orico USB 3.0 NVME SSD enclosure.  As a result the compile times are reduced by an estimated 40 to 50 percent.
 
