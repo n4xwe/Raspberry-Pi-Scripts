@@ -27,5 +27,4 @@ QSSTV, by Johan Maes, ON4QZ, is an SSTV and file transfer program. It has a simp
 
 NanoVNA Saver is a software package that adds functionality, mainly hard copy graphing capability, to most versions of the NanoVNA hardware. It is currently not compiling correctly because of an inability to install PyQT6 on the the February 22, 2023 version of the Raspberry Pi OS.  This is due to a Python3 version hell issue (what else?) that will hopefully be corrected in short order.
 
-An interesting sidebar...  I have recently upgraded my Pi4 with the addition of a Samsung 980 NVME drive mounted in an Orico USB 3.0 NVME SSD enclosure.  As a result the compile times are reduced by an estimated 40 to 50 percent.
-
+An interesting sidebar...  I have recently upgraded my Pi4 with the addition of a Samsung 980 NVME drive mounted in an ORICO M.2 NVMe SSD Enclosure.  Compile times are reduced by an estimated 40 to 50 percent as compared to using a "blazing fast" micro SD card. 
