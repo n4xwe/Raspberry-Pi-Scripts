@@ -1,7 +1,7 @@
 #!/bin/sh
-#Install freedv(1.8.4) w/codec2 w/LPCNet 
-#N4XWE 11-28-2022
-#Test Compiled on RaspiOS-bullseye dtd 2022-09-22 64-bit
+#Install freedv(1.8.8) w/codec2 w/LPCNet 
+#N4XWE 3-22-2023
+#Test Compiled on Raspberry Pi OS-bullseye dtd 2023-02-22 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt -y update && sudo apt -y upgrade
