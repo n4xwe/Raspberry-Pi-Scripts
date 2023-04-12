@@ -1,6 +1,6 @@
 #!/bin/sh
-#Install freedv(1.8.5) w/codec2 w/LPCNet 
-#N4XWE 12-18-2022
+#Install freedv(1.8.8.1) w/codec2 w/LPCNet 
+#N4XWE 4-12-2023
 ##Test compiled on Ubuntu 22.10 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
