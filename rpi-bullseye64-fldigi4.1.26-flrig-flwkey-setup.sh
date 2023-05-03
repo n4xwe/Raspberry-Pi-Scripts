@@ -1,5 +1,5 @@
 #!/bin/sh
-#install fldigi(4.1.26) w/Hamlib(4.5.4) flrig(1.4.8) flwkey(1.2.3) 
+#install fldigi(4.1.26) w/Hamlib(4.5.5) flrig(1.4.8) flwkey(1.2.3) 
 #N4XWE 3-20-2023
 #Compiled on RaspiOS-bullseye dtd 2023-02-21 64-bit
 
@@ -26,15 +26,15 @@ sudo swapon /swapfile
 #Create a unique directory for the FLDIGI compile and make it the current directory
 mkdir -p ~/src/FLDIGI && cd ~/src/FLDIGI
 
-#Download the Hamlib 4.5.4 source code from Sourceforge
-wget https://sourceforge.net/projects/hamlib/files/hamlib/4.5.4/hamlib-4.5.4.tar.gz ||
+#Download the Hamlib 4.5.5 source code from Sourceforge
+wget https://sourceforge.net/projects/hamlib/files/hamlib/4.5.5/hamlib-4.5.5.tar.gz ||
   { echo 'Unable to download the HamLib source code file'; exit 1; }
   
 #Extract the Hamlib source code files
-tar -xvzf hamlib-4.5.4.tar.gz
+tar -xvzf hamlib-4.5.5.tar.gz
 
 #Make the directory containing the uncompressed Hamlib source code the current directory
-cd ~/src/FLDIGI/hamlib-4.5.4
+cd ~/src/FLDIGI/hamlib-4.5.5
 
 #Configure the Makefile for the Hamlib compile
 ./configure --prefix=/usr/local --enable-static
