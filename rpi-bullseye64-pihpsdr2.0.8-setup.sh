@@ -1,7 +1,7 @@
 #!/bin/sh
 #install PiHPSDR(2.0.8-rc1) with wdsp(1.18)
-#N4XWE 3-20-2023
-#Compiled on Raspberry Pi OS-bullseye dtd 2023-02-22 64-bit
+#N4XWE 05-05-2023
+#Compiled on Raspberry Pi OS-bullseye dtd 2023-05-03 64-bit
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
