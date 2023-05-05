@@ -1,7 +1,7 @@
 #!/bin/sh
-#install QSSTV(9.5.11) w/HamLib(4.5)
-#N4XWE 12-02-2022
-#Test Compiled on RaspiOS-bullseye dtd 2022-09-22 64-bit
+#install QSSTV(9.5.11) w/HamLib(4.5.5)
+#N4XWE 05-05-2022
+#Test Compiled on RaspiOS-bullseye dtd 2023-05-03 64-bit
 
 
 #Update the apt cache and upgrade the system packages to their latest versions
@@ -15,15 +15,15 @@ libopenjp2-7 libopenjp2-7-dev doxygen libqwt-qt5-dev ||
 #Create a unique directory for the QSSTV compile and make it the current directory
 mkdir -p ~/src/QSSTV && cd ~/src/QSSTV
 
-#Download the Hamlib 4.5 source code from Sourceforge
-wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.5/hamlib-4.5.tar.gz ||
+#Download the Hamlib 4.5.5 source code from Sourceforge
+wget -N https://sourceforge.net/projects/hamlib/files/hamlib/4.5.5/hamlib-4.5.5.tar.gz ||
   { echo 'Unable to download the Hamlib source code file'; exit 1; }
   
 #Extract the Hamlib source code files
-tar -xvzf hamlib-4.5.tar.gz
+tar -xvzf hamlib-4.5.5.tar.gz
 
 #Change the directory containing the uncompressed HamLib source code to the current directory
-cd ~/src/QSSTV/hamlib-4.5
+cd ~/src/QSSTV/hamlib-4.5.5
 
 #Configure the Makefile for the Hamlib compile
 ./configure --prefix=/usr/local --enable-static
