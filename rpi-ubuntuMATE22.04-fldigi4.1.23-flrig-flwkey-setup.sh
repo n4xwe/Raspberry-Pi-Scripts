@@ -1,5 +1,5 @@
 #!/bin/sh
-#install fldigi(4.1.26) w/Hamlib(4.6git) flrig(1.4.7) flwkey(1.2.3) 
+#install fldigi(4.1.26) w/Hamlib(4.6git) flrig(2.0.01) flwkey(1.2.3) 
 #N4XWE 12-25-2022
 #Test compiled on Ubuntu MATE 22.04 64-bit
 
