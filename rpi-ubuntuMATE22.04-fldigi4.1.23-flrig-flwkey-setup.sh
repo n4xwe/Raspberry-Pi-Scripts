@@ -1,5 +1,5 @@
 #!/bin/sh
-#install fldigi(4.1.23) w/Hamlib(4.6git) flrig(1.4.7) flwkey(1.2.3) 
+#install fldigi(4.1.26) w/Hamlib(4.6git) flrig(1.4.7) flwkey(1.2.3) 
 #N4XWE 12-25-2022
 #Test compiled on Ubuntu MATE 22.04 64-bit
 
@@ -60,16 +60,16 @@ sudo apt -y install portaudio19-dev ||
 #Change the unique directory previously created for the compile to the current directory 
 cd ~/src/FLDIGI
 
-#Download the fldigi-4.1.23 source code from Sourceforge
-wget -N https://sourceforge.net/projects/fldigi/files/fldigi/fldigi-4.1.23.tar.gz ||
+#Download the fldigi-4.1.26 source code from Sourceforge
+wget -N https://sourceforge.net/projects/fldigi/files/fldigi/fldigi-4.1.26.tar.gz ||
   { echo 'Unable to download the fldigi source code file'; exit 1; }
 
 #Extract the fldigi source code files
-tar -xvzf fldigi-4.1.23.tar.gz ||
+tar -xvzf fldigi-4.1.26.tar.gz ||
   { echo 'Unable to extract fldigi'; exit 1; }
   
 #Change the directory containing the uncompressed fldigi source code to the current directory
-cd ~/src/FLDIGI/fldigi-4.1.23
+cd ~/src/FLDIGI/fldigi-4.1.26
 
 #Configure the Makefile for the fldigi compile
 ./configure
@@ -81,16 +81,16 @@ make -j3 && sudo make install ||
 #Change the unique directory previously created for the compile to the current directory 
 cd ~/src/FLDIGI
 
-#Download the flrig 1.4.7 source code from Sourceforge
-wget -N https://sourceforge.net/projects/fldigi/files/flrig/flrig-1.4.7.tar.gz ||
+#Download the flrig 2.0.01 source code from Sourceforge
+wget -N https://sourceforge.net/projects/fldigi/files/flrig/flrig-2.0.01.tar.gz ||
   { echo 'Unable to download the flrig source code file'; exit 1; }
 
 #Extract the flrig source code files
-tar -xvzf flrig-1.4.7.tar.gz ||
+tar -xvzf flrig-2.0.01.tar.gz ||
   { echo 'Unable to extract flrig'; exit 1; }
   
 #Change the directory containing the uncompressed flrig source code to the current directory
-cd ~/src/FLDIGI/flrig-1.4.7
+cd ~/src/FLDIGI/flrig-2.0.01
 
 #Configure the Makefile for the flrig compile
 ./configure
