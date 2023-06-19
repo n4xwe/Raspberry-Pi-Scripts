@@ -1,5 +1,5 @@
 #!/bin/sh
-#install fldigi(4.1.26) w/Hamlib(4.6-Git) flrig(1.4.8) flwkey(1.2.3) 
+#install fldigi(4.1.26) w/Hamlib(4.6-Git) flrig(2.0.01) flwkey(1.2.3) 
 #N4XWE 4-20-2023
 #Test compiled on Ubuntu 23.04 64-bit
 
@@ -81,16 +81,16 @@ make -j3 && sudo make install ||
 #Change the unique directory previously created for the compile to the current directory 
 cd ~/src/FLDIGI
 
-#Download the flrig 1.4.8 source code from Sourceforge
-wget -N https://sourceforge.net/projects/fldigi/files/flrig/flrig-1.4.8.tar.gz ||
+#Download the flrig 2.0.01 source code from Sourceforge
+wget -N https://sourceforge.net/projects/fldigi/files/flrig/flrig-2.0.01.tar.gz ||
   { echo 'Unable to download the flrig source code file'; exit 1; }
 
 #Extract the flrig source code files
-tar -xvzf flrig-1.4.8.tar.gz ||
+tar -xvzf flrig-2.0.01.tar.gz ||
   { echo 'Unable to extract flrig'; exit 1; }
   
 #Change the directory containing the uncompressed flrig source code to the current directory
-cd ~/src/FLDIGI/flrig-1.4.8
+cd ~/src/FLDIGI/flrig-2.0.01
 
 #Configure the Makefile for the flrig compile
 ./configure
