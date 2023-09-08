@@ -9,7 +9,7 @@ sudo apt update && sudo apt -y upgrade
 
 #Add all of the dependencies
 sudo apt -y install pkg-config g++ libfftw3-dev libpulse-dev libasound2-dev libv4l-dev \
-libopenjp2-7 libopenjp2-7-dev doxygen libqwt-qt5-dev ||
+libopenjp2-7 libopenjp2-7-dev doxygen libqwt-qt5-dev libqt5svg5-dev ||
 	{ echo 'Dependency installation failed'; exit 1;}
 
 #Create a unique directory for the QSSTV compile and make it the current directory
