@@ -13,7 +13,7 @@ sudo apt remove libhamlib2 -y
 
 #Add all of the dependencies
 sudo apt install -y git cmake automake libtool build-essential \
-asciidoc gfortran subversion libwxgtk3.2-dev libusb-1.0-0-dev \
+asciidoc gfortran subversion libwxgtk3.0-gtk3-dev libusb-1.0-0-dev \
 portaudio19-dev libsamplerate0-dev libcfitsio-dev \
 zlib1g-dev libgsl-dev libcurl4-gnutls-dev libtheora-dev \
 libasound2-dev libao-dev libfftw3-dev libgsm1-dev libtiff-dev \
