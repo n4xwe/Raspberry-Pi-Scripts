@@ -7,7 +7,7 @@
 sudo apt -y update && sudo apt -y upgrade
 
 #Download and install the required build dependencies
-sudo apt -y install cmake subversion libwxgtk3.0-gtk3-dev portaudio19-dev libportaudiocpp0 \
+sudo apt -y install cmake subversion libwxgtk3.2-dev portaudio19-dev libportaudiocpp0 \
 libpulse-dev libusb-1.0-0-dev libsamplerate0-dev libasound2-dev libao-dev libgsm1-dev \
 libsndfile1-dev libjpeg-dev libxft-dev libxinerama-dev libxcursor-dev libspeex-dev \
 libspeexdsp-dev libreadline-dev libhamlib-dev ||
