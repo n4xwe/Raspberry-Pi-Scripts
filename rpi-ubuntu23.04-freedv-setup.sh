@@ -1,6 +1,6 @@
 #!/bin/sh
 #Install freedv(1.9.2-dev) w/codec2 w/LPCNet 
-#N4XWE 4-20-2023
+#N4XWE 09-15-2023
 ##Test compiled on Ubuntu 23.04 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
