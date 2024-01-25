@@ -15,7 +15,7 @@ GNU Radio, originally developed by Eric Blossom, K7GNU, and Matt Ettus, N2MJI, i
 
 WSJT-X by Joe Taylor, K1JT, and currently supported by a group of very talented developers is weak signal software that includes, among other programs, FT8, FT4, JT8 and WSPR. The script also compiles the most recent version of the Hamlib library for integrated rig control,  Script runtime on a Raspberry Pi 4 is 20 minutes.
 
-Fldigi by Dave Freese, W1HKJ and others is a digital mode console with integrated Hamlib rig control.  This console handles a multitude of digital modes including PSK-31, WeatherFax, Hellschreiber and CW.  The script installs Hamlib 4.5, fldigi 4.1.25, rigctl 1.7 and flwkeyer 1.2.3. Script runtime on a Raspberry Pi 4 is approximately 30 minutes.
+Fldigi by Dave Freese, W1HKJ and others is a digital mode console with integrated Hamlib rig control.  This console handles a multitude of digital modes including PSK-31, WeatherFax, Hellschreiber and CW.  The script installs Hamlib 4.5.5, fldigi 4.2.03, rigctl 2.0.05 and flwkeyer 1.2.3. Script runtime on a Raspberry Pi 5 is approximately 20 minutes.
 
 FreeDV, by David Witten, KDØEAG, and David Rowe, VK5DGR and ably maintained by Mooneer Salem, K6AQ, is a GUI client for Digital Voice. This script incorporates Codec2 and LPCNet neural network software. Because of limitations in the Raspberrry Pi CPU the Digital Voice 2020 mode is not supported.  The script runtime on a Raspberry Pi 4 is approximately 10 minutes.
 
@@ -27,6 +27,6 @@ QSSTV, by Johan Maes, ON4QZ, is an SSTV and file transfer program. It has a simp
 
 NanoVNA Saver is a software package that adds functionality, mainly hard copy graphing capability, to most versions of the NanoVNA hardware. It is currently not compiling correctly because of an inability to install PyQT6 on the the February 22, 2023 version of the Raspberry Pi OS.  This is due to a Python3 version hell issue (what else?) that will hopefully be corrected in short order.
 
-An interesting sidebar...  I have recently upgraded my Pi4 with the addition of a Samsung 980 NVME drive mounted in an ORICO M.2 NVMe SSD Enclosure.  Compile times are reduced by an estimated 40 to 50 percent as compared to using a "blazing fast" micro SD card. 
+After a couple of years of pretty hard use my Raspberry Pi 4 bit the dust.  If I can find one in a reasonable amount of time, the plan is to buy a Raspberry Pi 5.  Fingers crossed on that one.
 
 2024 has arrived.  A few days before Christmas I was able to score a Raspberry Pi 5 at Gigaparts in Huntsville to replace my defunct RPi 4B.  To celebrate I have revised some scripts to compile on Raspberry Pi OS Bookworm.  In my mind there is almost no comparison possible between the performance of the Ri4B and the RPi5. The RPi5 does generate significantly more heat.  Without cooling, I am using a Raspberry Pi Active Cooler, the CPU will overheat and throttle during compiles.
