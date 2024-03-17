@@ -1,7 +1,7 @@
 #!/bin/sh
 #Install freedv(1.9.6) w/codec2 w/LPCNet 
 #N4XWE 12-18-2023
-#Test Compiled on Raspberry Pi OS Bookworm dtd 2023-12-05 64-bit
+#Test Compiled on Raspberry Pi Bookworm OS dtd 2024-03-12
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt -y update && sudo apt -y upgrade
