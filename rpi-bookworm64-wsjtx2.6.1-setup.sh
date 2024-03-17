@@ -1,7 +1,7 @@
 #!/bin/sh
 #install wsjt-x(2.6.1) Hamlib(4.5.4)
 #N4XWE 12-18-2023
-#Test Compiled on RaspiOS-bookworm dtd 2023-12-05 64-bit
+#Test Compiled on Raspberry Pi OS Bookworm dtd 2024-03-12 64-bit
 
 #Update the apt cache and upgrade the system packages to their latest versions
 sudo apt update && sudo apt upgrade -y
