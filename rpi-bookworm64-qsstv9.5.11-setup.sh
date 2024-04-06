@@ -1,6 +1,6 @@
 #!/bin/sh
 #install QSSTV(9.5.11) w/HamLib(4.5.5)
-#N4XWE 12-18-2023
+#N4XWE 03-06-2024
 #Test Compiled on Raspberry Pi OS Bookworm dtd 2024-03-12 64-bit
 
 
