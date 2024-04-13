@@ -1,6 +1,6 @@
 #!/bin/sh
-#Install freedv(1.9.2-dev) w/codec2 w/LPCNet 
-#N4XWE 01-25-2024
+#Install freedv(1.9.9) w/codec2 w/LPCNet 
+#N4XWE 04-13-2024
 #Test Compiled on Ubuntu 23.10 64-bit with a Raspberry Pi 5
 
 #Update the apt cache and upgrade the system packages to their latest versions
