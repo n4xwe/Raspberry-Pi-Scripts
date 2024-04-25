@@ -1,6 +1,6 @@
 #!/bin/sh
 #install fldigi(4.2.05) w/Hamlib(4.5.5) flrig(2.0.05) flwkey(1.2.3) 
-#N4XWE 01-10-2024
+#N4XWE 04-24-2024
 #Test Compiled on Raspberry Pi OS Bookworm dtd 2024-03-12 64-bit
 
 
