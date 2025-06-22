@@ -1,7 +1,7 @@
 #!/bin/sh
 #install tweaktime 
-#N4XWE 12-18-2023
-#Test Compiled on Raspberry Pi OS Bookworm dtd 2024-03-12 64-bit
+#N4XWE 06-21-2025
+#Test Compiled on Raspberry Pi OS Bookworm dtd 2025-05-13 64-bit
 
 
 
