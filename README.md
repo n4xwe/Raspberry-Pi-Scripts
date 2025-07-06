@@ -1,7 +1,7 @@
 # RPi-Scripts
 BASH Scripts that Install Ham Radio Software on the Raspberry Pi
 
-These BASH scripts install either GNU Radio, WSJT-X, PiHPSDR, Fldigi, tweaktime or QSSTV on a Raspberry Pi using the most recent Bookworm 64-bit version of the Raspberry Pi (fomerly Raspbian) Operating System or the Ubuntu 24.04 LTS Operating System. The scripts titled rpi-bookworm64(name of the package) have been tested on an 8GB RPi 5 running the May 13, 2025, release of the Raspberry Pi OS 64-bit version. The scripts titled rpi-ubuntu24.04LTS-(name of the package) have been tested on an 8GB RPi 4 running Ubuntu 24.04 ARM 64-bit. 
+These BASH scripts install either GNU Radio, WSJT-X, PiHPSDR, Fldigi, tweaktime or QSSTV on a Raspberry Pi using the most recent Bookworm 64-bit version of the Raspberry Pi (fomerly Raspbian) Operating System or the Ubuntu 24.04 LTS Operating System. The scripts titled rpi-bookworm64(name of the package) have been tested on an 8GB RPi 5 running the May 13, 2025, release of the Raspberry Pi OS 64-bit version. The scripts titled rpi-ubuntu22.04LTS-(name of the package) have been tested (unless otherwise noted) on an 8GB RPi 4 running Ubuntu 22.04 ARM 64-bit. 
 
 In order for the script to function correctly you must have a reasonable connection to the Internet.  The suggested method of launching the scripts is to create a separate directory named src off of the $HOME directory (/home/$USER/src).  Copy the script file to the src directory.  Using the Command Line change the file permissions of the script to allow its execution (chmod +x name-of-the script.sh).  The same result can be achieved on the Bullseye Desktop by doing a right click on your script and choosing Properties from the pop-up menu, then switch to the Permissions tab, opposite "Execute" change Nobody to Anyone.  To start the script from the Command Line preface the script name with a dot slash (./name-of-the-script.sh) and press the Enter key.  
 
@@ -16,8 +16,6 @@ GNU Radio, originally developed by Eric Blossom, K7GNU, and Matt Ettus, N2MJI, i
 WSJT-X by Joe Taylor, K1JT, and currently supported by a group of very talented developers is weak signal software that includes, among other programs, FT8, FT4, JT8 and WSPR. The script also compiles the most recent version of the Hamlib library for integrated rig control,  Script runtime on a Raspberry Pi 4 is 20 minutes.
 
 Fldigi by Dave Freese, W1HKJ and others is a digital mode console with integrated Hamlib rig control.  This console handles a multitude of digital modes including PSK-31, WeatherFax, Hellschreiber and CW.  The script installs Hamlib 4.5.5, fldigi 4.2.03, rigctl 2.0.05 and flwkeyer 1.2.3. Script runtime on a Raspberry Pi 5 is approximately 20 minutes.
-
-FreeDV, by David Witten, KDØEAG, and David Rowe, VK5DGR and ably maintained by Mooneer Salem, K6AQ, is a GUI client for Digital Voice. This script incorporates Codec2 and LPCNet neural network software. Because of limitations in the Raspberrry Pi CPU the Digital Voice 2020 mode is not supported.  The script runtime on a Raspberry Pi 4 is approximately 10 minutes.
 
 Dream is an AM/DRM software receiver written in C++ and Qt. Script runtime on a Raspberry Pi 4 is approximately 20 minutes.  The script for compiling Dream is currently a Work in Progress
 
